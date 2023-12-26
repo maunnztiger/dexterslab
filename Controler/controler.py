@@ -1,6 +1,6 @@
-import mvc_exceptions as mvc_exc
+from Library import mvc_exceptions as mvc_exc
 
-class Controller(object):
+class Controler(object):
     def __init__(self, model, view) -> None:
         self.model = model
         self.view = view

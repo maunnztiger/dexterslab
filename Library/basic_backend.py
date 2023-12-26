@@ -1,4 +1,4 @@
-import mvc_exceptions as mvc_exc
+from . import mvc_exceptions as mvc_exc
 
 items= list()
 
@@ -24,9 +24,10 @@ def read_item(name):
             'Can\'t read "{}" because it\'s not stored'.format(name)
         )
 
+
 def read_items():
     global items
-    return [item for item in items]
+    return items
 
 
 def update_item(name, price, quantity):
@@ -54,4 +55,6 @@ def delete_item(name):
         raise mvc_exc.ItemNotStored(
             'Cannot delete "{}" because it is not stored'.format(name)
         )
+        
+
         
