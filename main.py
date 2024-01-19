@@ -12,18 +12,17 @@ app.config['JSON_AS_ASCII'] = False
 
 @app.route("/")
 def hellou():
-    return render_template("index.html")
+    return render_template("general_data.html")
 
 
-@app.route("/script.js")
+@app.route("/general_data.js")
 def javascript():
-    return render_template("script.js")
+    return render_template("general_data.js")
 
 
-@app.route("/getData")
+@app.route("/general_data")
 def get_data():
     json_array = basic_backend.read_items()
-    # print(json_array)
     response= Response(json_array , content_type='application/json; charset=utf-8')
     return response
    
