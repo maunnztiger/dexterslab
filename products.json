@@ -1,5 +1,0 @@
-[{"name":"milk","price":50,"quantity":100,"article_no":50505050,"delivery_time":1,"durability_in_days":7},
-{"name":"wine","price":40,"quantity":380,"article_no":40404040,"delivery_time":5,"durability_in_days":720},
-{"name":"bread","price":45,"quantity":390,"article_no":45454545,"delivery_time":2,"durability_in_days":4},
-{"name":"cornflakes","price":20,"quantity":240,"article_no":39393939,"delivery_time":2,"durability_in_days":120},
-{"name":"chocolate","price":15,"quantity":500,"article_no":67676767,"delivery_time":3,"durability_in_days":240}]

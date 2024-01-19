@@ -1,60 +1,54 @@
-from . import mvc_exceptions as mvc_exc
+from sqlalchemy import create_engine,  text
+from sqlalchemy.orm import sessionmaker
+from decimal import Decimal
+import json
 
-items= list()
+user = 'postgres'
+password = 'root'  
+host = 'localhost'
+port = '5432'
+database = 'testdb'
 
+class DecimalEncoder(json.JSONEncoder):
+    def default(self, o):
+        if isinstance(o, Decimal):
+            return str(o)
+        return super().default(o)
+
+def read_items():
+    # Verbindung zur Datenbak herstellen
+    connection_str = f'postgresql://{user}:{password}@{host}:{port}/{database}'        
+    engine = create_engine(connection_str)
+    Session = sessionmaker(bind=engine)
+    session = Session()
+    
+    #Datenbankabfrage
+    query_string = 'SELECT * FROM data_general'
+    result= session.execute(text(query_string))
+    
+    # Ergebnis in ein JSON-Array umwandeln
+    
+    json_array = json.dumps([row._asdict() for row in result.fetchall()],  cls=DecimalEncoder)
+    session.close()
+    return json_array
+
+def read_item(name):
+    global items
+    
 def create_items(app_items):
     global items
     items = app_items
     
 def create_item(name, price, quantity):
     global items
-    results = list(filter(lambda x: x['name'] == name, items))
-    if results:
-        raise mvc_exc.ItemAlreadyStored('"{}" already stored!'.format(name))
-    else:
-        items.append({'name': name, 'price': price, 'quantity': quantity})
+   
     
-def read_item(name):
-    global items
-    myitems = list(filter(lambda x: x['name'] == name, items))
-    if myitems:
-        return myitems[0]
-    else:
-        raise mvc_exc.ItemNotStored(
-            'Can\'t read "{}" because it\'s not stored'.format(name)
-        )
-
-
-def read_items():
-    global items
-    return items
-
-
 def update_item(name, price, quantity):
     global items
-    idxs_items = list(
-        filter(lambda i_x: i_x[1]['name'] == name, enumerate(items))
-        )
-    if idxs_items:    
-        i, item_to_update = idxs_items[0][0], idxs_items[0][1]
-        items[i] = {'name': name, 'price': price, 'quantity': quantity}
-    else:
-        raise mvc_exc.ItemNotStored(
-            'Cannot update "{}" because it is not stored'.format(name)
-        )
+    
 
 def delete_item(name):
     global items
-    idxs_items = list(
-        filter(lambda i_x: i_x[1]['name'] == name, enumerate(items))
-    )        
-    if idxs_items:
-        i, items_to_delete = idxs_items[0][0], idxs_items[0][1]
-        del items[i]
-    else:
-        raise mvc_exc.ItemNotStored(
-            'Cannot delete "{}" because it is not stored'.format(name)
-        )
-        
+   
 
         
