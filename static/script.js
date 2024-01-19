@@ -26,7 +26,7 @@ class Model {
     return element;
   }
   
-  displayData(data){
+ displayData(data){
     console.log("displayed", data);
     if (data.length === 0) {
       const p = this.createElement('p');
@@ -34,16 +34,30 @@ class Model {
       this.commandList.append(p);
     } else {
 
-        
-
+       
+      new DataTable('#table_raw', {
+        autoWidth: false,
+        columnDefs: [
+          {
+              targets: ['_all'],
+              className: 'mdc-data-table__cell',
+          },
+        ],
+        data: data,
+        order: [[0, 'asc']],
+        columns: [
+          { title: 'ID' , data: 'general_id'},
+          { title: 'Aspekt der Umfrage' ,data: 'aspect'},
+          { title: 'Zahlen in %' ,data: 'value'},
+        ],
+      })
 
     }
+    
  }
-}
-
+} 
   
-  
-  class Controller {
+class Controller {
   constructor(model, view) {
     this.model = model;
     this.view = view;
@@ -52,7 +66,7 @@ class Model {
       obj.view.displayData(data);
     });
   }
- }
+}
   
   const app = new Controller(new Model(),new View() );
          

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, send_from_directory
+from flask import Flask, render_template, Response
 from Library import basic_backend
 #import os
 from sqlalchemy import create_engine
@@ -7,6 +7,7 @@ from sqlalchemy import create_engine
 
 
 app = Flask(__name__)
+app.config['JSON_AS_ASCII'] = False
 
 
 @app.route("/")
@@ -22,7 +23,9 @@ def javascript():
 @app.route("/getData")
 def get_data():
     json_array = basic_backend.read_items()
-    return json_array 
+    # print(json_array)
+    response= Response(json_array , content_type='application/json; charset=utf-8')
+    return response
    
    
 if __name__ == '__main__':

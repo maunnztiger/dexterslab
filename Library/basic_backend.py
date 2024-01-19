@@ -18,7 +18,7 @@ class DecimalEncoder(json.JSONEncoder):
 def read_items():
     # Verbindung zur Datenbak herstellen
     connection_str = f'postgresql://{user}:{password}@{host}:{port}/{database}'        
-    engine = create_engine(connection_str)
+    engine = create_engine(connection_str,  client_encoding='utf8')
     Session = sessionmaker(bind=engine)
     session = Session()
     
@@ -28,9 +28,9 @@ def read_items():
     
     # Ergebnis in ein JSON-Array umwandeln
     
-    json_array = json.dumps([row._asdict() for row in result.fetchall()],  cls=DecimalEncoder)
+    json_array = json.dumps([row._asdict() for row in result.fetchall()],  cls=DecimalEncoder, ensure_ascii=False).encode('utf-8')
     session.close()
-    return json_array
+    return json_array.decode('utf-8')
 
 def read_item(name):
     global items
