@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #edeefc;
+}
+
+#menu {
+    width: 250px;
+    height: 100%;
+    background-color: #3426fc;
+    position: fixed;
+    left: -250px;
+    transition: left 0.3s ease;
+    padding-top: 60px;
+    color: white;
+
+}
+
+#content {
+    margin-left: 500px;
+    padding: 16px;
+}
+
+#menu a {
+    padding: 15px 20px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    background-color: #66a2fc;
+}
+
+#menu button {
+    position: absolute;
+    height: 40px; 
+    width:180px; 
+    top: 10px; /* adjust to desired spacing */
+    left: 270px; /* adjust to desired spacing */
+    background-color: #08043d;
+    color:  #555;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#menu button:hover {
+    color:rgb(247, 241, 241);
+}

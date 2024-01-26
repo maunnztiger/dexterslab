@@ -1,34 +1,54 @@
-from . import basic_backend
+from sqlalchemy import create_engine,  text
+from sqlalchemy.orm import sessionmaker
+from decimal import Decimal
+from . import query_builder as model
+import json
 
-class ModelBasic(object):
+user = 'postgres'
+password = 'root'  
+host = 'localhost'
+port = '5432'
+database = 'testdb'
+
+class DecimalEncoder(json.JSONEncoder):
+    def default(self, o):
+        if isinstance(o, Decimal):
+            return str(o)
+        return super().default(o)
+
+def connect_to_database():
+    connection_str = f'postgresql://{user}:{password}@{host}:{port}/{database}'        
+    engine = create_engine(connection_str,  client_encoding='utf8')
+    Session = sessionmaker(bind=engine)
+    session = Session()
+    return session
+
+def read_items():
+    session = connect_to_database()
+    query_builder = model.QueryBuilder('data_general') 
+    query = query_builder.select('aspect', 'value').build() 
+    result= session.execute(text(query))
+    json_array = json.dumps([row._asdict() for row in result.fetchall()],  cls=DecimalEncoder, ensure_ascii=False).encode('utf-8')
+    session.close()
+    return json_array.decode('utf-8')
+
+def read_item(name):
+    global items
     
-    def __init__(self, application_items) -> None:
-        self._item_type = 'product'
-        self.create_items(application_items)
+def create_items(app_items):
+    global items
+    items = app_items
+    
+def create_item(name, price, quantity):
+    global items
+   
+    
+def update_item(name, price, quantity):
+    global items
+    
+
+def delete_item(name):
+    global items
+   
+
         
-    @property
-    def item_type(self):
-        return self._item_type
-    
-    @item_type.setter
-    def item_type(self, new_item_type):
-        self._item_type = new_item_type
-    
-    def create_item(self, name, price, quantity):
-        basic_backend.create_item(name, price, quantity)
-        
-
-    def create_items(self, items):
-        basic_backend.create_items(items)
-
-    def read_item(self, name):
-        return basic_backend.read_item(name)
-
-    def read_items(self):
-        return basic_backend.read_items()
-
-    def update_item(self, name, price, quantity):
-        basic_backend.update_item(name, price, quantity)
-
-    def delete_item(self, name):
-        basic_backend.delete_item(name)

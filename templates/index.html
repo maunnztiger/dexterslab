@@ -1,1 +1,26 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+    <style>
+       
+    </style>
+    <title>Homeoffice 2024</title>
+</head>
+<body>
+        
+        <script src="{{url_for('static', filename='script.js')}}"></script>
+        <div id="menu">
+            <button id="menuButton" onclick="toggleMenu()">☰</button>    
+            <a href="general_data_html">Homeoffice general data</a>
+            <a href="#">Men in Homeoffice data</a>
+            <a href="#">Employees in Homeoffice</a>
+        </div>
+       
+        <div id="content">
+            <h2>Content Goes Here</h2>
+        </div>
+</body>
+</html>

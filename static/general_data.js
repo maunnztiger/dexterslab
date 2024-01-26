@@ -3,8 +3,9 @@
        })
       .then(response => response.json())    
       .then(data => {
+        console.log(data)
         new DataTable('#table_raw', {
-        autoWidth: false,
+        autoWidth: true,
         columnDefs: [
           {
               targets: ['_all'],
@@ -13,9 +14,18 @@
         ],
         data: data,
         columns: [
-          { title: 'ID' , data: 'general_id'},
           { title: 'Aspekt der Umfrage' ,data: 'aspect'},
           { title: 'Zahlen in %' ,data: 'value'},
         ],
       })
      }) 
+console.log('data')
+
+function goBack() {
+  window.history.back();
+  }
+
+  const newChild = document.getElementById("menuButton")
+  const parentElement = document.body
+
+  parentElement.insertBefore(newChild, parentElement.firstChild);
