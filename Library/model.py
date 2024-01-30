@@ -18,7 +18,7 @@ class DecimalEncoder(json.JSONEncoder):
 
 def connect_to_database():
     connection_str = f'postgresql://{user}:{password}@{host}:{port}/{database}'        
-    engine = create_engine(connection_str,  client_encoding='utf8')
+    engine = create_engine(connection_str)
     Session = sessionmaker(bind=engine)
     session = Session()
     return session
@@ -26,11 +26,12 @@ def connect_to_database():
 def read_items():
     session = connect_to_database()
     query_builder = model.QueryBuilder('data_general') 
-    query = query_builder.select('aspect', 'value').build() 
+    query = query_builder.select('general_id', 'aspect', 'value').build() 
     result= session.execute(text(query))
     json_array = json.dumps([row._asdict() for row in result.fetchall()],  cls=DecimalEncoder, ensure_ascii=False).encode('utf-8')
     session.close()
-    return json_array.decode('utf-8')
+    # print (json_array)
+    return json_array
 
 def read_item(name):
     global items
