@@ -7,17 +7,14 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/dataTables.jqueryui.min.css"/>
     <link rel="stylesheet" href="https://cdn.datatables.net/datetime/1.5.1/css/dataTables.dateTime.min.css"/>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/data_general.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/men_data.css') }}">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/select/1.7.0/js/dataTables.select.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/datetime/1.5.1/js/dataTables.dateTime.min.js"></script>
     <script type="text/javascript" src="https://editor.datatables.net/extensions/Editor/js/dataTables.editor.min.js"></script>
-    <title>Homeoffice 2024</title>
-    <style>
-       
-    </style>
+    <title>Men in Homeoffice</title>
 </head>
 <body>
         <div>
@@ -26,22 +23,6 @@
             </p>
         </div>
         <table id="table_raw" class="display" style="width:100%"></table>
-        <script src="{{url_for('static', filename='general_data.js')}}"></script>
-        <div class="popup" id="popup">
-            <div class="input-container">
-                <h2>Edit Row</h2>
-                <label for="aspect">Aspekt:</label>
-                <input type="text" id="aspect">
-                <br>
-                <label for="value">Value: </label>
-                <input type="text" id="value">
-                <br>
-            </div>    
-            <div class="button-container">
-                <button onclick="saveChanges()">Save Changes</button>
-                <button onclick="closeEditor()">Cancel</button>
-        </div>    
-        </div>
-        <div class="overlay" id="overlay" onclick="closeEditor()"></div>
+        <script src="{{url_for('static', filename='men_data.js')}}"></script>
 </body>
 </html>
