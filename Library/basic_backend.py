@@ -4,12 +4,6 @@ from decimal import Decimal
 from . import query_builder as select_builder
 import json
 
-user = 'postgres'
-password = 'root'  
-host = 'localhost'
-port = '5432'
-database = 'testdb'
-
 class DecimalEncoder(json.JSONEncoder):
     def default(self, o):
         if isinstance(o, Decimal):
@@ -17,7 +11,9 @@ class DecimalEncoder(json.JSONEncoder):
         return super().default(o)
 
 def connect_to_database():
-    connection_str = f'postgresql://{user}:{password}@{host}:{port}/{database}'        
+    file = open('C:\\Users\\nn\\Documents\\Postgres.txt', 'r')
+    database_url = file.read()
+    connection_str = f'{database_url}'        
     engine = create_engine(connection_str)
     Session = sessionmaker(bind=engine)
     session = Session()
