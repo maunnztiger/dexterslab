@@ -22,11 +22,12 @@ menu_link_general = driver.find_element(by=By.LINK_TEXT, value="Homeoffice gener
 menu_link_general.click()
 table_id = driver.find_element(By.XPATH, "//table[@id='table_raw']")
 print("Test 2: `table-load succesfully` test passed")
-menu_button = driver.find_element(by=By.ID,value="menuButton")
-menu_button.click()
+return_button = driver.find_element(by=By.ID,value="returnButton")
+return_button.click()
+print("Test 3: `return button` test passed")
 driver.find_element(by=By.ID,value="menuButton")
 driver.quit()
-print("Test 3: `return button` test passed")
+
 print("SUCCESS: Definition of Done completed")
 
 
