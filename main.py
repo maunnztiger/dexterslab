@@ -59,15 +59,34 @@ def get_special_data():
     data = Response(json_array, content_type='application/json; charset=utf-8')
     return data
 
-@app.route("/general_data_update_row",  methods=['POST'])
-def general_data_update_row():
+@app.route("/update_row",  methods=['POST'])
+def update_row():
     data = request.get_json()
+    table_name = data['table_name']
     id = data['datatableIndex']
     newAsepct = data['newAspect']
     newValue = data['newValue']
-    Model.update_data_general('data_general',newAsepct, newValue , id)
+    Model.update_data(table_name,newAsepct, newValue , id)
     return json.dumps({'success':True}), 200, {'Content_type':'application/json; charset=utf-8'}
     
+@app.route("/insert_row", methods=['POST'])
+def insert_row():
+    data = request.get_json()
+    id = data["index"]
+    aspect = data['aspect']
+    value = data["value"]
+    print(id, aspect, value)
+    Model.insert_data('data_general', id, aspect, value)
+    return json.dumps({'success':True}), 200, {'Content_type':'application/json; charset=utf-8'}
+
+@app.route("/delete_row", methods=['POST'])
+def delete_row():
+    data = request.get_json()
+    id = data['id']
+    table_name = data['table_name']
+    print(id, table_name)
+    Model.delete_row(id, table_name)
+    return json.dumps({'success':True}), 200, {'Content_type':'application/json; charset=utf-8'}
 
 if __name__ == '__main__':
     app.run(host="localhost", port=8080, debug=True)
