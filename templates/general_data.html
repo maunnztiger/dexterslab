@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/data_general.css') }}">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/3.0.0/js/dataTables.buttons.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/select/1.7.0/js/dataTables.select.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/datetime/1.5.1/js/dataTables.dateTime.min.js"></script>
@@ -21,13 +22,21 @@
 </head>
 <body>
         <div>
-        <h1>Homeoffice General Statistic</h1>
-        </div>    
+        <h1 id="headline">Homeoffice General Statistic</h1>
+        </div> 
+
         <div>
             <p>
                 <button id="menuButton" onclick="goBack()">Go Back</button>    
             </p>
         </div>
+        <div>
+            <p>
+                <button class="createRecordButton" onclick="openCreateEditor()">Create Record</button>    
+            </p>
+        </div>   
+        
+        
         <table id="table_raw" class="display" style="width:100%"></table>
         <script src="{{url_for('static', filename='general_data.js')}}"></script>
         <div class="popup" id="popup">

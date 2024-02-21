@@ -23,7 +23,7 @@
             defaultContent: '<i class="fa fa-pencil"/>',
             orderable: true,
           },
-        ],
+        ],        
       });
 
       // Edit record
@@ -34,16 +34,16 @@
       setParameter(datatableIndex);
       console.log(templteIndex); 
       
-      openEditor(templteIndex+1);
+      openUpdateEditor(templteIndex+1);
       });
   }); 
 
 
   const newChild = document.getElementById("menuButton")
   const parentElement = document.body
-
   parentElement.insertBefore(newChild, parentElement.firstChild);
-  function openEditor(index){// Get data from the selected row
+
+  function openUpdateEditor(index){// Get data from the selected row
     var table = document.getElementById('table_raw');
     var aspectInput = document.getElementById('aspect');
     var valueInput = document.getElementById('value');
