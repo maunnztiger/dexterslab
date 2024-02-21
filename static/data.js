@@ -1,11 +1,15 @@
-  fetch('http://localhost:8080/general_data',{
+
+  let table_name = document.getElementsByTagName('table')[0].id
+  
+  fetch('http://localhost:8080/'+table_name,{
             method: 'GET',
        })
       .then(response => response.json())    
       .then(data => {
-      
-        const table = new DataTable('#data_general', {
-        autoWidth: true,
+        let table_name = document.getElementsByTagName('table')[0].id
+        const table = new DataTable('#'+table_name, {
+        autoWidth: false,
+        pageLength: 50,     
         columnDefs: [
           {
               targets: ['_all'],
@@ -14,7 +18,7 @@
         ],
         data: data,
         columns: [
-          { title: 'Id', data: 'general_id'},
+          { title: 'Id', data: 'id'},
           { title: 'Von den Befragten, die Homeoffice machen', data: 'aspect'},
           { title: 'Wert in Prozent', data: 'value'},
           {
@@ -32,18 +36,21 @@
         ],        
       });
 
-      // Edit record
-      $('#data_general').on('click', 'td.editor-edit', function (e) {
-      e.preventDefault();
-      let templateIndex = $(this).closest('tr').index();
-      let datatableIndex = $(this).closest('tr').find('td').first().text();
-      setParameter(datatableIndex);
-      console.log(templateIndex); 
+        
+        console.log(table_name)
+        // Edit record
+        $('#'+table_name).on('click', 'td.editor-edit', function (e) {
+        e.preventDefault();
+        let templateIndex = $(this).closest('tr').index();
+        let datatableIndex = $(this).closest('tr').find('td').first().text();
+        setParameter(datatableIndex);
+        console.log(templateIndex); 
       
-      openUpdateEditor(templateIndex+1);
-      });
+        openUpdateEditor(templateIndex+1);
+        });
 
-      $('#data_general').on('click', 'td.editor-delete', function (e) {
+        // Delete Record
+        $('#'+table_name).on('click', 'td.editor-delete', function (e) {
         e.preventDefault();
         let datatableIndex = $(this).closest('tr').find('td').first().text();
         setParameter(datatableIndex);
@@ -52,23 +59,20 @@
         }
         
         });
+    }); 
 
-
-  }); 
-
-  const newChild = document.getElementById("menuButton")
+  const newChild = document.getElementById("returnButton")
   const parentElement = document.body
   parentElement.insertBefore(newChild, parentElement.firstChild);
 
   function openUpdateEditor(index){
-    var table = document.getElementById('data_general');
+    let table_name = document.getElementsByTagName('table')[0].id
+    var table = document.getElementById(table_name);
     var aspectInput = document.getElementById('aspect');
     var valueInput = document.getElementById('value');
     var selectedRow = table.rows[index];
     var aspect = selectedRow.cells[1].innerHTML;
     var value = selectedRow.cells[2].innerHTML;
-
-    
     aspectInput.value = aspect;
     valueInput.value = value;
 
@@ -78,8 +82,6 @@
   }
 
   function openCreateEditor(){
-    let elementName = document.getElementById('data_general')
-    console.log(elementName.id)
     document.getElementById('popup2').style.display = 'block';
     document.getElementById('overlay2').style.display = 'block';
   }
@@ -88,30 +90,25 @@
     // Hide the popup and overlay
     document.getElementById('popup').style.display = 'none';
     document.getElementById('overlay').style.display = 'none';
-
   }
 
   function closeCreateEditor() {
-    // Hide the popup and overlay
     document.getElementById('popup2').style.display = 'none';
     document.getElementById('overlay2').style.display = 'none';
-
   }
 
   function createRecord(){
-    let elementName = document.getElementById('data_general')
-    console.log(elementName.id)
+    let table_name = document.getElementsByTagName('table')[0].id
+    console.log(table_name)
     let idInput = document.getElementById('Id');
     let aspectInput = document.getElementById('aspect2');
     let valueInput = document.getElementById('value2');
-      // Get the edited data
-
     let id = idInput.value;
     let aspect = aspectInput.value;
     let value = valueInput.value;
 
     this.obj = {};
-    this.obj.table_name = elementName.id
+    this.obj.table_name = table_name
     this.obj.index = id;
     this.obj.aspect = aspect;
     this.obj.value = value;
@@ -137,23 +134,20 @@
   }
 
   function saveChanges() {
-    let elementName = document.getElementById('data_general')
-    console.log(elementName.id)
+    let table_name = document.getElementsByTagName('table')[0].id
+    console.log(table_name)
     let aspectInput = document.getElementById('aspect');
     let valueInput = document.getElementById('value');
-      // Get the edited data
-
     let newAspect = aspectInput.value;
     let newValue = valueInput.value;
     
     datatableIndex = this.getParameter();
     this.obj = {};
-    this.obj.table_name = elementName.id
+    this.obj.table_name = table_name
     this.obj.datatableIndex = datatableIndex;
     this.obj.newAspect = newAspect;
     this.obj.newValue = newValue;
     const data = JSON.stringify(this.obj);
-    console.log(this.obj)
     $.ajax({
       type: "POST",
       url: 'update_row',
@@ -167,19 +161,18 @@
       },
       dataType: "application/json; charset=utf-8"
     })
-    // Close the editor
-    closeEditor();
-    setTimeout(function(){
-      window.location.reload(location.href);
+   closeEditor();
+   setTimeout(function(){
+     window.location.reload(location.href);
    }, 500);
   }
 
   function deleteRow(datatableIndex){
-    let elementName = document.getElementById('data_general')
-    console.log(elementName.id, datatableIndex)
+    let table_name = document.getElementsByTagName('table')[0].id
+    console.log(table_name)
     this.obj = {};
     this.obj.id = datatableIndex;
-    this.obj.table_name = elementName.id;
+    this.obj.table_name = table_name;
     const data = JSON.stringify(this.obj);
     $.ajax({
       type: "POST",

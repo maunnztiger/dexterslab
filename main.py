@@ -37,13 +37,13 @@ def get_general_data_html():
 def get_men_data_html():
     return render_template("men_data.html")
 
-@app.route("/general_data")
+@app.route("/data_general")
 def get_general_data():
     json_array = Model.read_data_general()
     data = Response(json_array , content_type='application/json; charset=utf-8')
     return data
 
-@app.route("/men_data")
+@app.route("/data_men")
 def get_men_data():
     json_array = Model.read_men_data()
     data = Response(json_array, content_type='application/json; charset=utf-8')
@@ -66,17 +66,18 @@ def update_row():
     id = data['datatableIndex']
     newAsepct = data['newAspect']
     newValue = data['newValue']
-    Model.update_data(table_name,newAsepct, newValue , id)
+    Model.update_data(table_name, newAsepct, newValue , id)
     return json.dumps({'success':True}), 200, {'Content_type':'application/json; charset=utf-8'}
     
 @app.route("/insert_row", methods=['POST'])
 def insert_row():
     data = request.get_json()
+    table_name = data["table_name"]
     id = data["index"]
     aspect = data['aspect']
     value = data["value"]
     print(id, aspect, value)
-    Model.insert_data('data_general', id, aspect, value)
+    Model.insert_data(table_name, id, aspect, value)
     return json.dumps({'success':True}), 200, {'Content_type':'application/json; charset=utf-8'}
 
 @app.route("/delete_row", methods=['POST'])

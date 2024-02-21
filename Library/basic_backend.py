@@ -22,7 +22,7 @@ def connect_to_database():
 def read_data_general():
     session = connect_to_database()
     query_builder = select_builder.QueryBuilder('data_general') 
-    query = query_builder.select('general_id', 'aspect', 'value').build() 
+    query = query_builder.select('id', 'aspect', 'value').build() 
     result= session.execute(text(query))
     json_array = json.dumps([row._asdict() for row in result.fetchall()], ensure_ascii=False).encode('utf-8')
     session.close()
@@ -32,7 +32,7 @@ def read_data_general():
 def update_data(table_name, newAsepct, newValue, id):
     try:
         session = connect_to_database()
-        update_query= "UPDATE {table_name} SET aspect='{value1}', value='{value2}' WHERE general_id={value3};".format(table_name=table_name, value1=newAsepct, value2=newValue, value3=id)
+        update_query= "UPDATE {table_name} SET aspect='{value1}', value='{value2}' WHERE id={value3};".format(table_name=table_name, value1=newAsepct, value2=newValue, value3=id)
         print(update_query)
         session.execute(text(update_query))
         session.commit()
@@ -42,7 +42,7 @@ def update_data(table_name, newAsepct, newValue, id):
 def insert_data(table_name, id, aspect, value):
     try:
        session = connect_to_database()
-       insert_query= "INSERT INTO {table_name} (general_id, aspect, value) VALUES ('{value1}','{value2}','{value3}');".format(table_name=table_name, value1=id, value2=aspect, value3=value)
+       insert_query= "INSERT INTO {table_name} (id, aspect, value) VALUES ('{value1}','{value2}','{value3}');".format(table_name=table_name, value1=id, value2=aspect, value3=value)
        print(insert_query)
        session.execute(text(insert_query))
        session.commit()
@@ -52,7 +52,7 @@ def insert_data(table_name, id, aspect, value):
 def delete_row(id, table_name):
     try:
         session = connect_to_database()
-        delete_query = "DELETE FROM {table_name} WHERE general_id = {value};".format(table_name=table_name, value=id)
+        delete_query = "DELETE FROM {table_name} WHERE id = {value};".format(table_name=table_name, value=id)
         print(delete_query)
         session.execute(text(delete_query))
         session.commit()
@@ -63,7 +63,7 @@ def delete_row(id, table_name):
 def read_men_data():
     session = connect_to_database()
     query_builder = select_builder.QueryBuilder('data_men') 
-    query = query_builder.select('men_id', 'aspect', 'value').build() 
+    query = query_builder.select('id', 'aspect', 'value').build() 
     result= session.execute(text(query))
     json_array = json.dumps([row._asdict() for row in result.fetchall()],  cls=DecimalEncoder, ensure_ascii=False).encode('utf-8')
     session.close()
@@ -72,7 +72,7 @@ def read_men_data():
 def read_special_data():
     session = connect_to_database()
     query_builder = select_builder.QueryBuilder('data_special') 
-    query = query_builder.select('special_id', 'aspect', 'value').build() 
+    query = query_builder.select('id', 'aspect', 'value').build() 
     result= session.execute(text(query))
     json_array = json.dumps([row._asdict() for row in result.fetchall()],  cls=DecimalEncoder, ensure_ascii=False).encode('utf-8')
     session.close()
