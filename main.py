@@ -18,6 +18,10 @@ def data_general_css():
 def script_js():
     return render_template("script.js")
 
+@app.route("/graph.js")
+def graph_js():
+    return render_template("graph.js")
+
 @app.route("/data.js")
 def general_data_js():
     return render_template("general_data.js")
@@ -33,6 +37,12 @@ def get_general_data_html(page):
 @app.route("/data/<string:table_name>")
 def get_data(table_name):
     json_array = Model.read_data(table_name)
+    data = Response(json_array , content_type='application/json; charset=utf-8')
+    return data
+
+@app.route("/data/data_diagram")
+def get_data_diagram():
+    json_array = Model.read_data('data_european_comparation')
     data = Response(json_array , content_type='application/json; charset=utf-8')
     return data
  
