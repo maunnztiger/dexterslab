@@ -14,24 +14,24 @@
     <script type="text/javascript" src="https://cdn.datatables.net/select/1.7.0/js/dataTables.select.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/datetime/1.5.1/js/dataTables.dateTime.min.js"></script>
     <script type="text/javascript" src="https://editor.datatables.net/extensions/Editor/js/dataTables.editor.min.js"></script>
-    
-    <title>Homeoffice Special Statistic</title>
+   
+    <title>Men in Homeoffice Statistic</title>
 </head>
 <body>
     <div>
-        <h1>Homeoffice Special Statistic</h1>
-    </div> 
-    <div>
-        <p>
-            <button class="createRecordButton" onclick="openCreateEditor()">Create Record</button>    
-        </p>
+        <h1>Men in Homeoffice Statistic</h1>
     </div>  
     <div>
         <p>
             <button id="returnButton" onclick="goBack()">Go Back</button>    
         </p>
     </div>
-    <table id="data_special" class="display" style="width:100%"></table>
+    <div>
+        <p>
+            <button class="createRecordButton" onclick="openCreateEditor()">Create Record</button>    
+        </p>
+    </div> 
+    <table id="data_men" class="display" style="width:100%"></table>
     <div class="popup" id="popup">
         <div class="input-container">
             <h2>Edit Row</h2>
@@ -67,5 +67,5 @@
     </div>
     <div class="overlay2" id="overlay2" onclick="closeCreateEditor()"></div>
     <script src="{{url_for('static', filename='data.js')}}"></script>
-    </body>
+</body>
 </html>
