@@ -1,7 +1,7 @@
 
   let table_name = document.getElementsByTagName('table')[0].id
   
-  fetch('http://localhost:8080/'+table_name,{
+  fetch('http://localhost:8080/data/'+table_name,{
             method: 'GET',
        })
       .then(response => response.json())    
@@ -203,4 +203,9 @@
 
   function goBack() {
     window.history.back();
+  }
+
+  function openCircleDiargram(){
+    console.log('graph.js')
+    location.assign('data_diagram.html')
   }

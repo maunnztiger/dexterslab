@@ -19,9 +19,9 @@ def connect_to_database():
     session = Session()
     return session
 
-def read_data_general():
+def read_data(table_name):
     session = connect_to_database()
-    query_builder = select_builder.QueryBuilder('data_general') 
+    query_builder = select_builder.QueryBuilder(table_name) 
     query = query_builder.select('id', 'aspect', 'value').build() 
     result= session.execute(text(query))
     json_array = json.dumps([row._asdict() for row in result.fetchall()], ensure_ascii=False).encode('utf-8')

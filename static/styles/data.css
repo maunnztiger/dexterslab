@@ -4,10 +4,10 @@
  
 #returnButton {
     position: absolute;
-    height: 50px; 
-    width: 80px; 
+    height: 5%; 
+    width: 10%; 
     top: 5%; /* adjust to desired spacing */
-    left: 500px; /* adjust to desired spacing */
+    left: 30%; /* adjust to desired spacing */
     background-color: #08043d;
     color:  #555;
     padding: 10px 20px;
@@ -28,10 +28,10 @@
 
 .createRecordButton {
     position: absolute;
-    height: 50px; 
-    width: 80px; 
+    height: 5%; 
+    width: 10%; 
     top: 5%; /* adjust to desired spacing */
-    left: 700px; /* adjust to desired spacing */
+    left: 40%; /* adjust to desired spacing */
     background-color: #2517e9;
     color:  #000000;
     padding: 10px 20px;
@@ -40,6 +40,26 @@
     cursor: pointer;
     z-index: 1;
 }
+
+.circleDiagramButton {
+    position: absolute;
+    height: 5%; 
+    width: 10%; 
+    top: 5%; /* adjust to desired spacing */
+    left: 50%; /* adjust to desired spacing */
+    background-color: #2517e9;
+    color:  #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+    
+}
+.circleDiagramButton:hover {
+    color:rgb(247, 241, 241);
+}
+
 .popup {
     display: none;
     position: fixed;
