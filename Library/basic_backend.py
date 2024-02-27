@@ -1,7 +1,10 @@
 from sqlalchemy import create_engine,  text
 from sqlalchemy.orm import sessionmaker
 from decimal import Decimal
-from . import query_builder as select_builder
+from .Querybuilder import query_builder as select
+from .Querybuilder import update_querybuilder as update
+from .Querybuilder import insert_querybuilder as insert
+from .Querybuilder import delete_querybuilder as delete
 import json
 
 class DecimalEncoder(json.JSONEncoder):
@@ -21,7 +24,7 @@ def connect_to_database():
 
 def read_data(table_name):
     session = connect_to_database()
-    query_builder = select_builder.QueryBuilder(table_name) 
+    query_builder = select.QueryBuilder(table_name) 
     query = query_builder.select('id', 'aspect', 'value').build() 
     result= session.execute(text(query))
     json_array = json.dumps([row._asdict() for row in result.fetchall()], ensure_ascii=False).encode('utf-8')
@@ -29,22 +32,25 @@ def read_data(table_name):
     return json_array
    
     
-def update_data(table_name, newAsepct, newValue, id):
+def update_data(table_name, newAspect, newValue, id):
     try:
         session = connect_to_database()
-        update_query= "UPDATE {table_name} SET aspect='{value1}', value='{value2}' WHERE id={value3};".format(table_name=table_name, value1=newAsepct, value2=newValue, value3=id)
+        update_builder = update.UpdateQueryBuilder(table_name)        
+        update_query = update_builder.set(aspect=f"{newAspect}", value = f"{newValue}").where(f"id = {id}").build()
         print(update_query)
         session.execute(text(update_query))
         session.commit()
     except Exception as e:
         print(e)
 
-def insert_data(table_name, id, aspect, value):
+def insert_data(table_name, newid, newaspect, newvalue):
     try:
        session = connect_to_database()
-       insert_query= "INSERT INTO {table_name} (id, aspect, value) VALUES ('{value1}','{value2}','{value3}');".format(table_name=table_name, value1=id, value2=aspect, value3=value)
+       query_builder = insert.InsertQueryBuilder(table_name)
+       data = {'id': newid, 'aspect': newaspect, 'value': newvalue}
+       insert_query = query_builder.insert(id=newid, aspect=newaspect, value=newvalue).build()
        print(insert_query)
-       session.execute(text(insert_query))
+       session.execute(text(insert_query), data)
        session.commit()
     except Exception as e:
         print(e)
@@ -52,31 +58,16 @@ def insert_data(table_name, id, aspect, value):
 def delete_row(id, table_name):
     try:
         session = connect_to_database()
-        delete_query = "DELETE FROM {table_name} WHERE id = {value};".format(table_name=table_name, value=id)
+        condition = "id = :id"
+        data = {'id': id}
+        query_builder = delete.DeleteQueryBuilder(table_name)
+        delete_query = query_builder.where(condition).build()
         print(delete_query)
-        session.execute(text(delete_query))
+        session.execute(text(delete_query), data)
         session.commit()
     except Exception as e:
         print(e)    
-        
 
-def read_men_data():
-    session = connect_to_database()
-    query_builder = select_builder.QueryBuilder('data_men') 
-    query = query_builder.select('id', 'aspect', 'value').build() 
-    result= session.execute(text(query))
-    json_array = json.dumps([row._asdict() for row in result.fetchall()],  cls=DecimalEncoder, ensure_ascii=False).encode('utf-8')
-    session.close()
-    return json_array
-
-def read_special_data():
-    session = connect_to_database()
-    query_builder = select_builder.QueryBuilder('data_special') 
-    query = query_builder.select('id', 'aspect', 'value').build() 
-    result= session.execute(text(query))
-    json_array = json.dumps([row._asdict() for row in result.fetchall()],  cls=DecimalEncoder, ensure_ascii=False).encode('utf-8')
-    session.close()
-    return json_array
    
 
         

@@ -4,7 +4,7 @@
  
 #returnButton {
     position: absolute;
-    height: 5%; 
+    height: 10%; 
     width: 10%; 
     top: 5%; /* adjust to desired spacing */
     left: 40%; /* adjust to desired spacing */
@@ -28,7 +28,7 @@
 
 .createRecordButton {
     position: absolute;
-    height: 5%; 
+    height: 10%; 
     width: 10%; 
     top: 5%; /* adjust to desired spacing */
     left: 60%; /* adjust to desired spacing */
@@ -43,7 +43,7 @@
 
 .circleDiagramButton {
     position: absolute;
-    height: 5%; 
+    height: 10%; 
     width: 10%; 
     top: 5%; /* adjust to desired spacing */
     left: 80%; /* adjust to desired spacing */

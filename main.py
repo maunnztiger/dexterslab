@@ -1,4 +1,4 @@
-from flask import Flask, render_template, Response, request, redirect, session, jsonify
+from flask import Flask, render_template, Response, request, send_from_directory
 from Library import model as Model
 import json
 import os
@@ -23,7 +23,7 @@ def graph_js():
     return render_template("graph.js")
 
 @app.route("/data.js")
-def general_data_js():
+def data_js():
     return render_template("general_data.js")
 
 @app.route("/")
@@ -31,9 +31,14 @@ def hellou():
     return render_template("index.html")
 
 @app.route("/<string:page>")
-def get_general_data_html(page):  
+def data_html(page):  
    return render_template(str(page))
 
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'favicon.ico')
+    
 @app.route("/data/<string:table_name>")
 def get_data(table_name):
     json_array = Model.read_data(table_name)
@@ -60,11 +65,11 @@ def update_row():
 def insert_row():
     data = request.get_json()
     table_name = data["table_name"]
-    id = data["index"]
-    aspect = data['aspect']
-    value = data["value"]
-    print(id, aspect, value)
-    Model.insert_data(table_name, id, aspect, value)
+    newid = data["index"]
+    newaspect = data['aspect']
+    newvalue = data["value"]
+    print(newid, newaspect, newvalue)
+    Model.insert_data(table_name, newid, newaspect, newvalue)
     return json.dumps({'success':True}), 200, {'Content_type':'application/json; charset=utf-8'}
 
 @app.route("/delete_row", methods=['POST'])

@@ -7,8 +7,9 @@ class QueryBuilder:
 
     def select(self, *columns):
         self.columns.extend(columns)
-        return self
+        return self        
 
+    
     def where(self, condition):
         self.conditions.append(condition)
         return self
@@ -17,14 +18,17 @@ class QueryBuilder:
         self.order_by = (column, ascending)
         return self
 
+    
+    
     def build(self):
+        
         query = "SELECT "
 
         if not self.columns:
             query += "*"
         else:
             query += ", ".join(self.columns)
-
+        
         query += f" FROM {self.table_name}"
 
         if self.conditions:
