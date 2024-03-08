@@ -214,7 +214,7 @@ def properties(self):
                 if hasattr(self.klass, 'primary_keys'):
                     self.table_properties[self.klass] = self.table_properties
                 else:
-raise Exception()
+                    raise Exception()
 
         except Exception as e:
             print(e)
@@ -230,18 +230,18 @@ def join(self, table, richtung='LEFT'):
 def on(self, spalte1='', spalte2=''):
         try:
             if not spalte1 or not spalte2:
-                raise Exception as e 
+                raise Exception() 
 
             spalten_array1 = spalte1.split('.')
             spalten_array2 = spalte2.split('.')
 
             if len(spalten_array1) == 1:
-                raise Exception(self.klass + '::' + inspect.currentframe().f_code.co_name + '(): Wert für Spalte 1"' + spalte1 + '" muss im Format "table_name.row" angegeben werden.')
+                raise Exception()
             else:
                 spalte1 = f'{self.backticks(spalten_array1[0])}.{self.backticks(spalten_array1[1])}'
 
             if len(spalten_array2) == 1:
-                raise Exception(self.klass + '::' + inspect.currentframe().f_code.co_name + '(): Wert für Spalte 2"' + spalte2 + '" muss im Format "table_name.row" angegeben werden.')
+                raise Exception()
             else:
                 spalte2 = f'{self.backticks(spalten_array2[0])}.{self.backticks(spalten_array2[1])}'
 

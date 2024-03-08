@@ -2,9 +2,6 @@ from sqlalchemy import create_engine,  text
 from sqlalchemy.orm import sessionmaker
 from decimal import Decimal
 from .Querybuilder import query_builder as select
-from .Querybuilder import update_querybuilder as update
-from .Querybuilder import insert_querybuilder as insert
-from .Querybuilder import delete_querybuilder as delete
 import json
 
 class DecimalEncoder(json.JSONEncoder):
