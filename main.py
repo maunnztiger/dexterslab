@@ -55,7 +55,7 @@ def get_data_diagram():
 def update_row():
     data = request.get_json()
     table_name = data['table_name']
-    id = data['datatableIndex']
+    id = data['datatableIndex']  
     newAsepct = data['newAspect']
     newValue = data['newValue']
     Model.update_data(table_name, newAsepct, newValue , id)

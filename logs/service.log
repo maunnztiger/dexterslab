@@ -1,0 +1,472 @@
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+UPDATE data_general SET aspect = 'Angestellte in Deutschalnd, die 2020 die Chance auf Homeoffice hatten', value = '36,0%' WHERE id = 0
+Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+UPDATE data_general SET aspect = 'Angestellte in Deutschland, die 2020 die Chance auf Homeoffice hatten', value = '36,0%' WHERE id = 0
+Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+13 Alle Hühner wollen *icken 100%
+INSERT INTO data_general (id, aspect, value) VALUES (:id, :aspect, :value)
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  

@@ -10,7 +10,7 @@ fetch('http://localhost:8080/data/data_diagram',{
             data: {
             labels: data.map(row =>row.aspect),
             datasets: [{
-                label: '% of Homeoffice in Germany compared to other european countries',
+                label: 'Homeoffice in Germany and other countries in Europe',
                 data: data.map(row=>parseInt(row.value.slice(0, -1))),
                 borderWidth: 2,
                 indexAxis: 'x'
