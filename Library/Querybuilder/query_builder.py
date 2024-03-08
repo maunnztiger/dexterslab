@@ -197,7 +197,7 @@ def primary_key(self):
                 if hasattr(self.klass, 'primary_keys'):
                     self.table_primary_keys[self.klass] = self.table_primary_keys
                 else:
-                    raise Exception(Exception(self.klass + '::' + inspect.currentframe().f_code.co_name + '()Querybuilder' + self.klass + ' hat keine entsprechenden Properties!'))
+                    raise Exception()
                     
 
         except Exception as e:
@@ -214,7 +214,7 @@ def properties(self):
                 if hasattr(self.klass, 'primary_keys'):
                     self.table_properties[self.klass] = self.table_properties
                 else:
-                    raise Exception(self.klass + '::' +inspect.currentframe().f_code.co_name + '()Querybuilder' + self.klass + ' hat keine entsprechenden Properties!')
+                    raise Exception(elf.klass + '::' +inspect.currentframe().f_code.co_name + '()Querybuilder' + self.klass + ' hat keine entsprechenden Properties!
 
         except Exception as e:
             print(e)
