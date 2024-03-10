@@ -8,7 +8,7 @@ class InsertQueryBuilder:
         for column, value in kwargs.items():
             self.columns.append(column)
             # Hier verwenden wir den Parameter :value anstelle von {value}
-            self.values.append(f":{value}")
+            self.values.append(f"{value}")
         return self
 
     def build(self):

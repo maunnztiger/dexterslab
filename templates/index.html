@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
        
     </style>
@@ -25,6 +26,9 @@
        
         <div id="content">
             <h2>Homeoffice reporting tool</h2>
+        </div>
+        <div>
+            <canvas id="myChart"></canvas>
         </div>
 </body>
 </html>

@@ -48,6 +48,8 @@ def insert_data(table_name, newid, newaspect, newvalue):
        session = connect_to_database()
        query_builder = insert.InsertQueryBuilder(table_name)
        data = {'id': newid, 'aspect': newaspect, 'value': newvalue}
+       newaspect = f"'{newaspect}'"
+       newvalue = f"'{newvalue}'"
        insert_query = query_builder.insert(id=newid, aspect=newaspect, value=newvalue).build()
        print(insert_query)
        session.execute(text(insert_query), data)
