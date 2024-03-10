@@ -1331,3 +1331,662 @@ Traceback (most recent call last):
   File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 5, in <module>
     from .Querybuilder import update_querybuilder as update
 ImportError: cannot import name 'update_querybuilder' from 'Library.Querybuilder' (unknown location)
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://localhost:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\Querybuilder\\query_builder.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 24
+    query_builder = model.(table_name) 
+                          ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 24
+    query_builder = model.(table_name) 
+                          ^
+SyntaxError: invalid syntax
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://localhost:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 25
+    query = query_builder.select('id', 'aspect', 'value').from 
+                                                          ^^^^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 25
+    query = query_builder.select('id', 'aspect', 'value').from() 
+                                                          ^^^^
+SyntaxError: invalid syntax
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://localhost:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\Querybuilder\\query_builder.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\Querybuilder\\query_builder.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\Querybuilder\\query_builder.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\Querybuilder\\query_builder.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\Querybuilder\\query_builder.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\Querybuilder\\query_builder.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\Querybuilder\\query_builder.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 25
+    query = query_builder.select('id', 'aspect', 'value').
+                                                          ^
+SyntaxError: invalid syntax
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://localhost:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 25
+    query = query_builder.select(list()'id', 'aspect', 'value')
+                                 ^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 25
+    query = query_builder.select(list('id', 'aspect', 'value')
+                                ^
+SyntaxError: '(' was never closed
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://localhost:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 25
+    query = .select('*')
+            ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 25
+    query = .select('*')
+            ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 25
+    query = .select('*')
+            ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 25
+    query = .select('*')
+            ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 25
+    query =  builder.select('*').from
+                                 ^^^^
+SyntaxError: invalid syntax
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://localhost:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\Querybuilder\\query_builder.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 4, in <module>
+    from .Querybuilder import query_builder as model
+  File "C:\Users\nn\dexterslab\Library\Querybuilder\query_builder.py", line 151
+    else:
+         ^
+IndentationError: unindent does not match any outer indentation level
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 4, in <module>
+    from .Querybuilder import query_builder as model
+  File "C:\Users\nn\dexterslab\Library\Querybuilder\query_builder.py", line 151
+    else:
+         ^
+IndentationError: unindent does not match any outer indentation level
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 4, in <module>
+    from .Querybuilder import query_builder as model
+  File "C:\Users\nn\dexterslab\Library\Querybuilder\query_builder.py", line 166
+    return self
+               ^
+IndentationError: unindent does not match any outer indentation level
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 4, in <module>
+    from .Querybuilder import query_builder as model
+  File "C:\Users\nn\dexterslab\Library\Querybuilder\query_builder.py", line 155
+    for value in table_name:
+                            ^
+IndentationError: unindent does not match any outer indentation level
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 4, in <module>
+    from .Querybuilder import query_builder as model
+  File "C:\Users\nn\dexterslab\Library\Querybuilder\query_builder.py", line 154
+    count = 1
+IndentationError: unexpected indent
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://localhost:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\Querybuilder\\query_builder.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\Querybuilder\\query_builder.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\Querybuilder\\query_builder.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\Querybuilder\\query_builder.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\Querybuilder\\query_builder.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\Querybuilder\\query_builder.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\Querybuilder\\query_builder.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\Querybuilder\\query_builder.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\Querybuilder\\query_builder.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\Querybuilder\\query_builder.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 36
+    update_builder = .UpdateQueryBuilder(table_name)        
+                     ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 36
+    update_builder = .UpdateQueryBuilder(table_name)        
+                     ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 36
+    update_builder = .UpdateQueryBuilder(table_name)        
+                     ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 36
+    table_name)        
+              ^
+SyntaxError: unmatched ')'
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://localhost:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 36
+    update_query = .set(aspect=f"{newAspect}", value = f"{newValue}").where(f"id = {id}").build()
+                   ^
+SyntaxError: invalid syntax
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://localhost:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\Querybuilder\\query_builder.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\Querybuilder\\query_builder.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 25
+    query =  builder.select('id', 'aspect', 'value']).from_table(table_name)
+                                                   ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 25
+    query =  builder.select('id', 'aspect', 'value']).from_table(table_name)
+                                                   ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://localhost:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\update_query_builder.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 5
+    from . import 
+                  ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 5
+    from . import 
+                  ^
+SyntaxError: invalid syntax
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://localhost:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 26
+    query = .select('id', 'aspect', 'value').build()
+            ^
+SyntaxError: invalid syntax
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://localhost:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 36
+    builder = .Querybuilder() 
+              ^
+SyntaxError: invalid syntax
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://localhost:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\insert_into_query_builder.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 6, in <module>
+    from . import ins
+ImportError: cannot import name 'ins' from 'Library' (C:\Users\nn\dexterslab\Library\__init__.py)
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://localhost:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\insert_into_query_builder.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 6, in <module>
+    from . import insert_into_query_builder as insert
+  File "C:\Users\nn\dexterslab\Library\insert_into_query_builder.py", line 3
+    self.table_name = table_nameclass InsertQueryBuilder:
+                                      ^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 6, in <module>
+    from . import insert_into_query_builder as insert
+  File "C:\Users\nn\dexterslab\Library\insert_into_query_builder.py", line 3
+    self.table_name = table_nameclass InsertQueryBuilder:
+                                      ^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://localhost:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\insert_into_query_builder.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\delete_query_builder.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 7
+    from 
+         ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 7
+    from 
+         ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 7
+    from 
+         ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 7
+    from . import del
+                  ^^^
+SyntaxError: invalid syntax

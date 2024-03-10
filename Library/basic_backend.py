@@ -1,7 +1,10 @@
 from sqlalchemy import create_engine,  text
 from sqlalchemy.orm import sessionmaker
 from decimal import Decimal
-from .Querybuilder import query_builder as select
+from . import query_builder as select
+from . import update_query_builder as update
+from . import insert_into_query_builder as insert
+from . import delete_query_builder as delete
 import json
 
 class DecimalEncoder(json.JSONEncoder):
@@ -21,8 +24,8 @@ def connect_to_database():
 
 def read_data(table_name):
     session = connect_to_database()
-    query_builder = select.QueryBuilder(table_name) 
-    query = query_builder.select('id', 'aspect', 'value').build() 
+    model = select.QueryBuilder(table_name) 
+    query = model.select('id', 'aspect', 'value').build()
     result= session.execute(text(query))
     json_array = json.dumps([row._asdict() for row in result.fetchall()], ensure_ascii=False).encode('utf-8')
     session.close()
@@ -32,8 +35,8 @@ def read_data(table_name):
 def update_data(table_name, newAspect, newValue, id):
     try:
         session = connect_to_database()
-        update_builder = update.UpdateQueryBuilder(table_name)        
-        update_query = update_builder.set(aspect=f"{newAspect}", value = f"{newValue}").where(f"id = {id}").build()
+        model = update.UpdateQueryBuilder(table_name) 
+        update_query = model.set(aspect=f"{newAspect}", value = f"{newValue}").where(f"id = {id}").build()
         print(update_query)
         session.execute(text(update_query))
         session.commit()
