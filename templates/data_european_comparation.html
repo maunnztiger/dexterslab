@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/dataTables.jqueryui.min.css"/>
     <link rel="stylesheet" href="https://cdn.datatables.net/datetime/1.5.1/css/dataTables.dateTime.min.css"/>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/data.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/data.css') }}">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/buttons/3.0.0/js/dataTables.buttons.js"></script>
@@ -33,7 +33,7 @@
         </div>
         <div>
             <p>
-                <button class="createRecordButton" onclick="openCreateEditor()">Create</button>    
+                <button class="createRecordButton" onclick="openCreateEditor()">Create Record</button>    
             </p>
         </div>   
         
@@ -69,15 +69,10 @@
                 <br>
             </div>    
             <div class="button-container2">
-                <button onclick="createRecord()">Create</button>
+                <button onclick="createRecord()">Create Record</button>
                 <button onclick="closeCreateEditor()">Cancel</button>
         </div>    
         </div>
         <div class="overlay2" id="overlay2" onclick="closeCreateEditor()"></div>
-        <div>
-            <p>
-                <button class="circleDiagramButton" onclick="openCircleDiargram()">Diagram</button>    
-            </p>
-        </div>  
 </body>
 </html>

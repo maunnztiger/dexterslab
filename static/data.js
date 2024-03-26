@@ -1,8 +1,11 @@
-
-  let table_name = document.getElementsByTagName('table')[0].id
-  
+let table_name = document.getElementsByTagName('table')[0].id
   fetch('http://localhost:8080/data/'+table_name,{
             method: 'GET',
+            headers: {
+              'Content-type':'application/json', 
+              'Accept':'application/json'
+              },
+              dataType: "application/json; charset=utf-8"
        })
       .then(response => response.json())    
       .then(data => {
@@ -19,8 +22,8 @@
         data: data,
         columns: [
           { title: 'Id', data: 'id'},
-          { title: 'Von den Befragten, die Homeoffice machen', data: 'aspect'},
-          { title: 'Wert in Prozent', data: 'value'},
+          { title: 'Aspekt', data: 'aspect'},
+          { title: 'Value', data: 'value'},
           {
             data: null,
             className: 'dt-center editor-edit',

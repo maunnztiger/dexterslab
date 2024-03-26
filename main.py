@@ -38,13 +38,14 @@ def data_html(page):
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
                                'favicon.ico')
-    
-@app.route("/data/<string:table_name>")
+ 
+@app.route("/data/<string:table_name>", methods=['GET'])
 def get_data(table_name):
-    json_array = Model.read_data(table_name)
-    data = Response(json_array , content_type='application/json; charset=utf-8')
-    return data
-
+        if request.method == 'GET':
+            json_array = Model.read_data(table_name)
+            resp = Response(json_array , content_type='application/json; charset=utf-8')
+            return resp
+  
 @app.route("/data/data_diagram")
 def get_data_diagram():
     json_array = Model.read_data('data_european_comparation')
