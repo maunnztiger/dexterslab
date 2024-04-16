@@ -22,11 +22,11 @@
     color:rgb(247, 241, 241);
 }
 
-.createRecordButton:hover {
+.create_record_button:hover {
     color:rgb(247, 241, 241);
 }
 
-.createRecordButton {
+.create_record_button {
     position: absolute;
     height: 10%; 
     width: 10%; 

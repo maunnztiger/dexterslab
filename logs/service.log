@@ -46,3 +46,205 @@ C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Pyt
 C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
  * Serving Flask app 'main'
  * Debug mode: on
+Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+1 Alle Hühner wollen *icken 100%
+INSERT INTO data_general (id, aspect, value) VALUES (1, 'Alle Hühner wollen *icken', '100%')
+(psycopg2.errors.UniqueViolation) FEHLER:  doppelter Schlüsselwert verletzt Unique-Constraint »data_general_pkey«
+DETAIL:  Schlüssel »(id)=(1)« existiert bereits.
+
+[SQL: INSERT INTO data_general (id, aspect, value) VALUES (1, 'Alle Hühner wollen *icken', '100%%')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+13 Alle Hühner wollen *icken 100%
+INSERT INTO data_general (id, aspect, value) VALUES (13, 'Alle Hühner wollen *icken', '100%')
+4 Alle Hühner wollen *icken 98%
+INSERT INTO data_men (id, aspect, value) VALUES (4, 'Alle Hühner wollen *icken', '98%')
+UPDATE data_men SET aspect = 'Alle Hühner wollen *icken', value = '100%' WHERE id = 4
+1 Alle Hühner wollen *icken 100%
+INSERT INTO data_general (id, aspect, value) VALUES (1, 'Alle Hühner wollen *icken', '100%')
+0 Alle Hühner wollen *icken 100%
+INSERT INTO data_general (id, aspect, value) VALUES (0, 'Alle Hühner wollen *icken', '100%')
+UPDATE data_general SET aspect = 'Alle Hühner *icken gern', value = '100%' WHERE id = 1
+2 Jade ist eine verlogene, schmierige *otze 100%
+INSERT INTO data_general (id, aspect, value) VALUES (2, 'Jade ist eine verlogene, schmierige *otze', '100%')
+3 Janina ist das Gleiche nur noch viel schlimmer als Jade 95%
+INSERT INTO data_general (id, aspect, value) VALUES (3, 'Janina ist das Gleiche nur noch viel schlimmer als Jade', '95%')
+4 Lotte denkt immer nur an sich selbst und hat eigentlich weder Zeit noch Interesse 100%
+INSERT INTO data_general (id, aspect, value) VALUES (4, 'Lotte denkt immer nur an sich selbst und hat eigentlich weder Zeit noch Interesse', '100%')
+5 Für Sonja Meier bist du nur dann gut, wenn sie Probleme hat 100%
+INSERT INTO data_general (id, aspect, value) VALUES (5, 'Für Sonja Meier bist du nur dann gut, wenn sie Probleme hat', '100%')
+6 Familie Lehmann interessiert sich nur für das, was sie von dir bekommen können, niemals für deine Person 100%
+INSERT INTO data_general (id, aspect, value) VALUES (6, 'Familie Lehmann interessiert sich nur für das, was sie von dir bekommen können, niemals für deine Person', '100%')
+(psycopg2.errors.StringDataRightTruncation) FEHLER:  Wert zu lang für Typ character varying(100)
+
+[SQL: INSERT INTO data_general (id, aspect, value) VALUES (6, 'Familie Lehmann interessiert sich nur für das, was sie von dir bekommen können, niemals für deine Person', '100%%')]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+6 Familie Lehmann interessiert sich nur für das, was sie von dir bekommen können, niemals für deine Person 100%
+INSERT INTO data_general (id, aspect, value) VALUES (6, 'Familie Lehmann interessiert sich nur für das, was sie von dir bekommen können, niemals für deine Person', '100%')
+(psycopg2.errors.StringDataRightTruncation) FEHLER:  Wert zu lang für Typ character varying(100)
+
+[SQL: INSERT INTO data_general (id, aspect, value) VALUES (6, 'Familie Lehmann interessiert sich nur für das, was sie von dir bekommen können, niemals für deine Person', '100%%')]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+6 Familie Lehmann interessiert sich nur für das, was sie von dir bekommen können, niemals für dich 100%
+INSERT INTO data_general (id, aspect, value) VALUES (6, 'Familie Lehmann interessiert sich nur für das, was sie von dir bekommen können, niemals für dich', '100%')
+7 Jade und Janina nutzen dich nur eiskalt aus 99%
+INSERT INTO data_general (id, aspect, value) VALUES (7, 'Jade und Janina nutzen dich nur eiskalt aus', '99%')
+UPDATE data_general SET aspect = 'Jade und ihre Familie nutzen dich nur eiskalt aus', value = '99%' WHERE id = 7
+8 Für Jade bist du auch nur eine weitere Person in Ihrem Schatten 100%
+INSERT INTO data_general (id, aspect, value) VALUES (8, 'Für Jade bist du auch nur eine weitere Person in Ihrem Schatten', '100%')
+UPDATE data_general SET aspect = 'Jade und ihre Familie nutzen dich nur für ihre Zwecke aus', value = '99%' WHERE id = 7
+1 data_general
+DELETE FROM data_general WHERE id = :id
+0 data_general
+DELETE FROM data_general WHERE id = :id
+4 data_general
+DELETE FROM data_general WHERE id = :id
+9 Du brauchst Menschen, die sich selbst nicht so wichtig nehmen 100%
+INSERT INTO data_general (id, aspect, value) VALUES (9, 'Du brauchst Menschen, die sich selbst nicht so wichtig nehmen', '100%')
+10 Nimm dich daher selbst auch nicht so wichtig 100%
+INSERT INTO data_general (id, aspect, value) VALUES (10, 'Nimm dich daher selbst auch nicht so wichtig', '100%')
+Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+4 data_men
+DELETE FROM data_men WHERE id = :id
+  
+INSERT INTO data_men (id, aspect, value) VALUES (, '', '')
+(psycopg2.errors.SyntaxError) FEHLER:  Syntaxfehler bei »,«
+LINE 1: INSERT INTO data_men (id, aspect, value) VALUES (, '', '')
+                                                         ^
+
+[SQL: INSERT INTO data_men (id, aspect, value) VALUES (, '', '')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+  
+INSERT INTO data_men (id, aspect, value) VALUES (, '', '')
+(psycopg2.errors.SyntaxError) FEHLER:  Syntaxfehler bei »,«
+LINE 1: INSERT INTO data_men (id, aspect, value) VALUES (, '', '')
+                                                         ^
+
+[SQL: INSERT INTO data_men (id, aspect, value) VALUES (, '', '')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+  
+INSERT INTO data_men (id, aspect, value) VALUES (, '', '')
+(psycopg2.errors.SyntaxError) FEHLER:  Syntaxfehler bei »,«
+LINE 1: INSERT INTO data_men (id, aspect, value) VALUES (, '', '')
+                                                         ^
+
+[SQL: INSERT INTO data_men (id, aspect, value) VALUES (, '', '')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+  
+INSERT INTO data_men (id, aspect, value) VALUES (, '', '')
+(psycopg2.errors.SyntaxError) FEHLER:  Syntaxfehler bei »,«
+LINE 1: INSERT INTO data_men (id, aspect, value) VALUES (, '', '')
+                                                         ^
+
+[SQL: INSERT INTO data_men (id, aspect, value) VALUES (, '', '')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+5 Männer, die unabhänging von Führungspositionen häufiger mobil arbeiten 54%
+INSERT INTO data_men (id, aspect, value) VALUES (5, 'Männer, die unabhänging von Führungspositionen häufiger mobil arbeiten', '54%')
+5 data_men
+DELETE FROM data_men WHERE id = :id
+4 Männer, die unabhänging von Führungspositionen häufiger mobil arbeiten 54%
+INSERT INTO data_men (id, aspect, value) VALUES (4, 'Männer, die unabhänging von Führungspositionen häufiger mobil arbeiten', '54%')
+4 data_men
+DELETE FROM data_men WHERE id = :id
+4 Männer, die unabhänging von Führungspositionen häufiger mobil arbeiten 54%
+INSERT INTO data_men (id, aspect, value) VALUES (4, 'Männer, die unabhänging von Führungspositionen häufiger mobil arbeiten', '54%')
+4 data_men
+DELETE FROM data_men WHERE id = :id
+4 Männer, die unabhänging von Führungspositionen häufiger mobil arbeiten 54%
+INSERT INTO data_men (id, aspect, value) VALUES (4, 'Männer, die unabhänging von Führungspositionen häufiger mobil arbeiten', '54%')
+5 Männer, die unabhänging von Führungspositionen häufiger mobil arbeiten 54%
+INSERT INTO data_men (id, aspect, value) VALUES (5, 'Männer, die unabhänging von Führungspositionen häufiger mobil arbeiten', '54%')
+4 data_men
+DELETE FROM data_men WHERE id = :id
+5 data_men
+DELETE FROM data_men WHERE id = :id
+4 Männer, die unabhänging von Führungspositionen häufiger mobil arbeiten 54%
+INSERT INTO data_men (id, aspect, value) VALUES (4, 'Männer, die unabhänging von Führungspositionen häufiger mobil arbeiten', '54%')
+4 data_men
+DELETE FROM data_men WHERE id = :id
+4 Männer, die unabhänging von Führungspositionen häufiger mobil arbeiten 54%
+INSERT INTO data_men (id, aspect, value) VALUES (4, 'Männer, die unabhänging von Führungspositionen häufiger mobil arbeiten', '54%')
+Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+5 Männer, die unabhänging von Führungspositionen häufiger mobil arbeiten 54%
+INSERT INTO data_men (id, aspect, value) VALUES (5, 'Männer, die unabhänging von Führungspositionen häufiger mobil arbeiten', '54%')
+5 data_men
+DELETE FROM data_men WHERE id = :id
+4 data_men
+DELETE FROM data_men WHERE id = :id
+4 Männer, die unabhänging von Führungspositionen häufiger mobil arbeiten 54%
+INSERT INTO data_men (id, aspect, value) VALUES (4, 'Männer, die unabhänging von Führungspositionen häufiger mobil arbeiten', '54%')
+4 data_men
+DELETE FROM data_men WHERE id = :id
+4 efergfergews ewtfergrtg
+INSERT INTO data_men (id, aspect, value) VALUES (4, 'efergfergews', 'ewtfergrtg')
+5 Männer, die unabhänging von Führungspositionen häufiger mobil arbeiten 54%
+INSERT INTO data_men (id, aspect, value) VALUES (5, 'Männer, die unabhänging von Führungspositionen häufiger mobil arbeiten', '54%')
+5 data_men
+DELETE FROM data_men WHERE id = :id
+4 data_men
+DELETE FROM data_men WHERE id = :id
+4 Männer, die unabhänging von Führungspositionen häufiger mobil arbeiten 54%
+INSERT INTO data_men (id, aspect, value) VALUES (4, 'Männer, die unabhänging von Führungspositionen häufiger mobil arbeiten', '54%')
+5 Männer, die kein Homeoffice machen wollen 2%
+INSERT INTO data_men (id, aspect, value) VALUES (5, 'Männer, die kein Homeoffice machen wollen', '2%')
+4 data_men
+DELETE FROM data_men WHERE id = :id
+5 data_men
+DELETE FROM data_men WHERE id = :id
+4 Männer, die kein Homeoffice machen wollen 2%
+INSERT INTO data_men (id, aspect, value) VALUES (4, 'Männer, die kein Homeoffice machen wollen', '2%')
+4 data_men
+DELETE FROM data_men WHERE id = :id
+4 Männer, die kein Homeoffice machen wollen 2%
+INSERT INTO data_men (id, aspect, value) VALUES (4, 'Männer, die kein Homeoffice machen wollen', '2%')
+4 data_men
+DELETE FROM data_men WHERE id = :id
+4 Männer, die kein Homeoffice machen wollen 2%
+INSERT INTO data_men (id, aspect, value) VALUES (4, 'Männer, die kein Homeoffice machen wollen', '2%')
+4 data_men
+DELETE FROM data_men WHERE id = :id
+Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+Batchvorgang abbrechen (J/N)? 
