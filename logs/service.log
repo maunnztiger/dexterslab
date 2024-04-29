@@ -296,3 +296,32 @@ INSERT INTO data_men (id, aspect, value) VALUES (4, 'Männer, die kein Homeoffice
 DELETE FROM data_men WHERE id = :id
 UPDATE data_men SET aspect = 'Männer, die prinzipiell kein Homeoffice machen wollen', value = '2%' WHERE id = 3
 Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+UPDATE data_general SET aspect = 'Wachstum der Remote Arbeitenden seit 2009', value = '159%' WHERE id = 2
+UPDATE data_general SET aspect = 'Anteil der in Deutschland remote arbeitenden Angestellten', value = '24%' WHERE id = 3
+UPDATE data_general SET aspect = 'Anteil der weltweit vollständig remote arbeitenden', value = '16%' WHERE id = 5
+UPDATE data_general SET aspect = 'Anteil der Befragten, die im Homeoffice produktiver sind als im Büro', value = '77%' WHERE id = 6
+UPDATE data_general SET aspect = 'Anzahl an Autos, um die durch Homeoffice Abgasemissionen eingespart wird', value = '600.000' WHERE id = 7
+UPDATE data_general SET aspect = 'Bis 2028 sind global Remote-Arbeiter', value = '73%' WHERE id = 8
+UPDATE data_general SET aspect = 'Stimmen für einen gesetzlichen Anspruch auf Homeoffice', value = '73%' WHERE id = 9
+11 Favorisieren Homeoffice aufgrund fehlender Ablenkung 75%
+INSERT INTO data_general (id, aspect, value) VALUES (11, 'Favorisieren Homeoffice aufgrund fehlender Ablenkung', '75%')
+12 Jährliche Gesamtsumme, die Angestellte im Homeoffice für Transport, Essen und Kinderbetreuung sparen 7000$
+INSERT INTO data_general (id, aspect, value) VALUES (12, 'Jährliche Gesamtsumme, die Angestellte im Homeoffice für Transport, Essen und Kinderbetreuung sparen', '7000$')
+Batchvorgang abbrechen (J/N)? 

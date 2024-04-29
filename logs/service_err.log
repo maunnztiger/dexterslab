@@ -2862,3 +2862,151 @@ Press CTRL+C to quit
 127.0.0.1 - - [23/Apr/2024 15:23:08] "GET /static/styles/styles.css HTTP/1.1" 200 -
 127.0.0.1 - - [23/Apr/2024 15:23:08] "GET /static/script.js HTTP/1.1" 200 -
 127.0.0.1 - - [23/Apr/2024 15:23:08] "GET /static/favicon.ico HTTP/1.1" 200 -
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://localhost:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://localhost:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+127.0.0.1 - - [29/Apr/2024 14:13:43] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:13:43] "GET /static/styles/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:13:43] "GET /static/script.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:13:45] "GET /static/favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:13:48] "GET /data_general.html HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:13:48] "GET /static/styles/data.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:13:49] "GET /static/data.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:13:49] "GET /data/data_general HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\nn\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nn\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nn\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nn\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nn\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nn\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nn\dexterslab\main.py", line 45, in get_data
+    json_array = Model.read_data(table_name)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nn\dexterslab\Library\model.py", line 4, in read_data
+    result = basic_backend.read_data(table_name)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 26, in read_data
+    session = connect_to_database()
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 17, in connect_to_database
+    file = open('C:\\Users\\nn\\Documents\\Postgres.txt', 'r')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\nn\\Documents\\Postgres.txt'
+127.0.0.1 - - [29/Apr/2024 14:14:00] "GET /static/styles/data.css HTTP/1.1" 304 -
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+127.0.0.1 - - [29/Apr/2024 14:16:09] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:16:09] "GET /static/styles/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:16:09] "GET /static/script.js HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:16:12] "GET /data_general.html HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:16:12] "GET /static/styles/data.css HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:16:12] "GET /static/data.js HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:16:13] "GET /data/data_general HTTP/1.1" 200 -
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://localhost:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+127.0.0.1 - - [29/Apr/2024 14:16:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:16:50] "GET /static/styles/styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:16:50] "GET /static/script.js HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:16:55] "GET /data_general.html HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:16:55] "GET /static/styles/data.css HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:16:55] "GET /static/data.js HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:16:56] "GET /data/data_general HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:18:52] "POST /update_row HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:18:52] "GET /data_general.html HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:18:52] "GET /static/styles/data.css HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:18:52] "GET /static/data.js HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:18:52] "GET /data/data_general HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:18:53] "GET /static/favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:19:37] "POST /update_row HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:19:37] "GET /data_general.html HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:19:37] "GET /static/styles/data.css HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:19:37] "GET /static/data.js HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:19:37] "GET /data/data_general HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:19:38] "GET /static/favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:20:28] "POST /update_row HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:20:28] "GET /data_general.html HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:20:28] "GET /static/styles/data.css HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:20:28] "GET /static/data.js HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:20:28] "GET /data/data_general HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:20:29] "GET /static/favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:21:07] "POST /update_row HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:21:07] "GET /data_general.html HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:21:07] "GET /static/styles/data.css HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:21:07] "GET /static/data.js HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:21:07] "GET /data/data_general HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:21:08] "GET /static/favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:22:33] "POST /update_row HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:22:33] "GET /data_general.html HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:22:33] "GET /static/styles/data.css HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:22:33] "GET /static/data.js HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:22:33] "GET /data/data_general HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:22:34] "GET /static/favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:23:44] "POST /update_row HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:23:45] "GET /data_general.html HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:23:45] "GET /static/styles/data.css HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:23:45] "GET /static/data.js HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:23:45] "GET /data/data_general HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:23:45] "GET /static/favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:24:48] "POST /update_row HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:24:49] "GET /data_general.html HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:24:49] "GET /static/styles/data.css HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:24:49] "GET /static/data.js HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:24:49] "GET /data/data_general HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:24:49] "GET /static/favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:27:00] "POST /insert_row HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:27:01] "GET /data_general.html HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:27:01] "GET /static/styles/data.css HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:27:01] "GET /static/data.js HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:27:01] "GET /data/data_general HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:27:01] "GET /static/favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:28:24] "POST /insert_row HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:28:25] "GET /data_general.html HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:28:25] "GET /static/styles/data.css HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:28:25] "GET /static/data.js HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:28:25] "GET /data/data_general HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:28:25] "GET /static/favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:28:52] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:28:52] "GET /static/styles/styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:28:52] "GET /static/script.js HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:28:52] "GET /static/favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:28:55] "GET /data_general.html HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:28:55] "GET /static/styles/data.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:28:55] "GET /static/data.js HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:28:55] "GET /data/data_general HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:43:26] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:43:26] "GET /static/styles/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:44:22] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2024 14:44:22] "GET /static/styles/styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [29/Apr/2024 14:44:23] "GET /static/script.js HTTP/1.1" 304 -

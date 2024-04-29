@@ -14,7 +14,7 @@ class DecimalEncoder(json.JSONEncoder):
         return super().default(o)
 
 def connect_to_database():
-    file = open('C:\\Users\\nn\\Documents\\Postgres.txt', 'r')
+    file = open('C:\\Users\\nn\\dexterslab\\Postgres.txt', 'r')
     database_url = file.read()
     connection_str = f'{database_url}'        
     engine = create_engine(connection_str)
