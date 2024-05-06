@@ -41,12 +41,12 @@
     z-index: 1;
 }
 
-.circleDiagramButton {
+#diagramButton {
     position: absolute;
     height: 10%; 
     width: 10%; 
     top: 5%; /* adjust to desired spacing */
-    left: 80%; /* adjust to desired spacing */
+    left: 72%; /* adjust to desired spacing */
     background-color: #2517e9;
     color:  #000000;
     padding: 10px 20px;
@@ -56,7 +56,7 @@
     z-index: 1;
     
 }
-.circleDiagramButton:hover {
+#diagramButton:hover {
     color:rgb(247, 241, 241);
 }
 

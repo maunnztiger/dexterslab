@@ -23,17 +23,22 @@
 </head>
 <body>
         <div>
-        <h1 id="headline">Homeoffice General Statistic</h1>
+        <h1 id="headline">Full Remote Work in Europe</h1>
         </div> 
 
         <div>
             <p>
-                <button id="returnButton" onclick="goBack()">Go Back</button>    
+                <button id="returnButton" onclick="goBack()">Main Menu ☰</button>    
             </p>
         </div>
         <div>
             <p>
-                <button class="createRecordButton" onclick="openCreateEditor()">Create Record</button>    
+                <button id="create_button" class="create_record_button" onclick="openCreateEditor()">Create Record</button>    
+            </p>
+        </div>
+        <div>
+            <p>
+                <button id="diagramButton" onclick="openDiagramPage()">Open Diagram</button>    
             </p>
         </div>   
         
@@ -74,5 +79,6 @@
         </div>    
         </div>
         <div class="overlay2" id="overlay2" onclick="closeCreateEditor()"></div>
+
 </body>
 </html>

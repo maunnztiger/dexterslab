@@ -33,8 +33,8 @@ fetch('http://localhost:8080/data/data_diagram',{
         }
       }
     });
-    chart.canvas.parentNode.style.height = '65%';
-    chart.canvas.parentNode.style.width = '80%'; 
+    chart.canvas.parentNode.style.height = '62%';
+    chart.canvas.parentNode.style.width = '75%'; 
     chart.canvas.parentNode.style.top = '15%'; 
     chart.canvas.parentNode.style.left = '15%'; 
     chart.canvas.parentNode.style.position = 'absolute'; 

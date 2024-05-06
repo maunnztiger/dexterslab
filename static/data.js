@@ -208,7 +208,7 @@ let table_name = document.getElementsByTagName('table')[0].id
     window.history.back();
   }
 
-  function openCircleDiargram(){
+  function openDiagramPage(){
     console.log('graph.js')
-    location.assign('data_diagram.html')
+    location.assign('diagram.html')
   }
