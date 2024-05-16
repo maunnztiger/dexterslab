@@ -1,4 +1,4 @@
-fetch('http://localhost:8080/data/data_diagram',{
+fetch('http://www.dexterslab.com:8080/data/data_diagram',{
             method: 'GET',
        })
       .then(response => response.json())    

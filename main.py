@@ -6,6 +6,7 @@ import os
 app = Flask(__name__)
 
 app.config['JSON_AS_ASCII'] = False
+app.config['SERVER_NAME'] = 'www.dexterslab.com:8080'
 @app.route("/styles.css")
 def styles_css():
     return render_template("styles/styles.css")
@@ -83,5 +84,5 @@ def delete_row():
     return json.dumps({'success':True}), 200, {'Content_type':'application/json; charset=utf-8'}
 
 if __name__ == '__main__':
-    app.run(host="localhost", port=8080, debug=True)
+    app.run(host="www.dexterslab.com", port=8080, debug=True)
      

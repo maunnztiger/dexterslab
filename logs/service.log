@@ -1,0 +1,561 @@
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+10 data_general
+DELETE FROM data_general WHERE id = :id
+UPDATE data_men SET aspect = 'Männer, die prinzipiell kein Homeoffice machen wollen', value = '2%' WHERE id = 3
+4 Männer, die kein Homeoffice machen wollen 2%
+INSERT INTO data_men (id, aspect, value) VALUES (4, 'Männer, die kein Homeoffice machen wollen', '2%')
+4 data_men
+DELETE FROM data_men WHERE id = :id
+4 Männer, die kein Homeoffice machen wollen 2%
+INSERT INTO data_men (id, aspect, value) VALUES (4, 'Männer, die kein Homeoffice machen wollen', '2%')
+4 data_men
+DELETE FROM data_men WHERE id = :id
+UPDATE data_men SET aspect = 'Männer, die prinzipiell kein Homeoffice machen wollen', value = '2%' WHERE id = 3
+4 Männer, die kein Homeoffice machen wollen 2%
+INSERT INTO data_men (id, aspect, value) VALUES (4, 'Männer, die kein Homeoffice machen wollen', '2%')
+4 data_men
+DELETE FROM data_men WHERE id = :id
+UPDATE data_men SET aspect = 'Männer, die prinzipiell kein Homeoffice machen wollen', value = '2%' WHERE id = 3
+4 Männer, die kein Homeoffice machen wollen 2%
+INSERT INTO data_men (id, aspect, value) VALUES (4, 'Männer, die kein Homeoffice machen wollen', '2%')
+4 data_men
+DELETE FROM data_men WHERE id = :id
+UPDATE data_men SET aspect = 'Männer, die prinzipiell kein Homeoffice machen wollen', value = '2%' WHERE id = 3
+Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+4 Männer, die kein Homeoffice machen wollen 2%
+INSERT INTO data_men (id, aspect, value) VALUES (4, 'Männer, die kein Homeoffice machen wollen', '2%')
+4 data_men
+DELETE FROM data_men WHERE id = :id
+UPDATE data_men SET aspect = 'Männer, die prinzipiell kein Homeoffice machen wollen', value = '2%' WHERE id = 3
+Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
