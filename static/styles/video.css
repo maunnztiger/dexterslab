@@ -1,0 +1,29 @@
+
+#link_container{
+    width: 99%;
+    height: 80%;
+    text-align: center;
+    background-color: #122c52;
+    overflow-y: scroll;
+    position: fixed;
+   }
+
+   #returnButton {
+    position: absolute;
+    height: 5%; 
+    width: 10%; 
+    top: 1%; /* adjust to desired spacing */
+    left: 1%; /* adjust to desired spacing */
+    background-color: #08043d;
+    color:  #555;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+#returnButton:hover {
+    color:rgb(247, 241, 241);
+}
