@@ -560,3 +560,20 @@ C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\pytho
  * Serving Flask app 'main'
  * Debug mode: on
 Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on
+Batchvorgang abbrechen (J/N)? 
+C:\Users\nn\dexterslab>set "python=C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe" 
+
+C:\Users\nn\dexterslab>C:\Users\nn\AppData\Local\Programs\Python\Python311\python.exe "C:\Users\nn\dexterslab\main.py"  
+ * Serving Flask app 'main'
+ * Debug mode: on

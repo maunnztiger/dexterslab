@@ -8,7 +8,7 @@
     position: fixed;
    }
 
-   #returnButton {
+   #video_list {
     position: absolute;
     height: 5%; 
     width: 10%; 
@@ -24,6 +24,25 @@
 }
 
 
-#returnButton:hover {
+#video_list:hover {
     color:rgb(247, 241, 241);
+}
+
+#main_menu {
+    position: absolute;
+    height: 5%; 
+    width: 10%; 
+    top: 1%; /* adjust to desired spacing */
+    left: 1%; /* adjust to desired spacing */
+    background-color: #08043d;
+    color:  #555;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;   
+}
+
+#main_menu:hover {
+    color:rgb(247, 241, 241); 
 }

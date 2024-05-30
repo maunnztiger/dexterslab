@@ -1357,3 +1357,30 @@ werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'images
 127.0.0.1 - - [17/May/2024 08:05:11] "GET /video_menu_list.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
 127.0.0.1 - - [17/May/2024 08:05:11] "GET /video_menu_list.html?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
 127.0.0.1 - - [17/May/2024 08:05:11] "GET /video_menu_list.html?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://www.dexterslab.com:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://www.dexterslab.com:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+C:\Users\nn\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py:415: UserWarning: Current server name 'www.applynow.com:8080' doesn't match configured server name 'www.dexterslab.com:8080'
+  return self.url_map.bind_to_environ(
+127.0.0.1 - - [21/May/2024 11:42:47] "GET / HTTP/1.1" 404 -
+127.0.0.1 - - [21/May/2024 11:42:47] "GET /favicon.ico HTTP/1.1" 404 -
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://www.dexterslab.com:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+C:\Users\nn\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py:415: UserWarning: Current server name 'localhost:8080' doesn't match configured server name 'www.dexterslab.com:8080'
+  return self.url_map.bind_to_environ(
+127.0.0.1 - - [21/May/2024 11:54:14] "GET / HTTP/1.1" 404 -
+127.0.0.1 - - [21/May/2024 11:54:30] "GET / HTTP/1.1" 404 -
+127.0.0.1 - - [21/May/2024 13:22:56] "OPTIONS /data/data_general HTTP/1.1" 200 -
