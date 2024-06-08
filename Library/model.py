@@ -11,4 +11,8 @@ def insert_data(table_name, newid, newaspect, newvalue):
         basic_backend.insert_data(table_name, newid, newaspect, newvalue)
 
 def delete_row(id, table_name):
-        basic_backend.delete_row(id, table_name)        
+        basic_backend.delete_row(id, table_name)
+
+def get_video_source(index):
+        result = basic_backend.read_video_json(index)
+        return result

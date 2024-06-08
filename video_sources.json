@@ -1,10 +1,21 @@
-[{  "Id" :0, 
-    "width": "800", 
-    "height": "500", 
-    "src":"https://www.youtube.com/embed/aMxFcrCg4To?si=AlyAcUfmWaw01ltO", 
-    "title":"YouTube video player", 
-    "frameborder": "0", 
-    "allow":"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"    
-}, {
-    
+[{  
+    "src":"https://www.youtube.com/embed/aMxFcrCg4To?si=AlyAcUfmWaw01ltO"
+}, 
+{
+    "src":"https://www.youtube.com/embed/LktfiaxjTIc?si=edDaeLEuM1ckZ8Pn"
+}, 
+{
+    "src":"https://www.youtube.com/embed/u__6KRlb-qU?si=XyvwGrSDd-UmHGKa"
+},
+{
+    "src":"https://www.youtube.com/embed/qOoiWVgWbYY?si=8G3sfUXARJl700DD"    
+},
+{
+    "src":"https://www.youtube.com/embed/Dl2Dktlm1o8?si=ADCkmELW9uk7iWNz"        
+},
+{
+    "src":"https://www.youtube.com/embed/l9jmb8TE7sw?si=ai255fyIG-8tHqck"    
+},
+{
+    "src":"https://www.youtube.com/embed/6BstoFpubUg?si=hpnSQ43P-QlqYE3X"    
 }]

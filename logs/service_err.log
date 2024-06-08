@@ -2236,3 +2236,730 @@ jinja2.exceptions.TemplateNotFound: slideShow.html
 127.0.0.1 - - [30/May/2024 13:43:57] "GET /static/images/video_4.png HTTP/1.1" 200 -
 127.0.0.1 - - [30/May/2024 13:43:57] "GET /static/images/video_6.png HTTP/1.1" 304 -
 127.0.0.1 - - [30/May/2024 13:43:57] "GET /static/images/video_7.png HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:11:43] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2024 14:11:43] "GET /static/styles/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2024 14:11:43] "GET /static/script.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2024 14:11:43] "GET /static/favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2024 14:12:08] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2024 14:12:08] "GET /static/styles/styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:12:08] "GET /static/script.js HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:12:35] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2024 14:12:35] "GET /static/styles/styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:12:35] "GET /static/script.js HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:13:01] "GET /data_men.html HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2024 14:13:01] "GET /static/styles/data.css HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2024 14:13:01] "GET /static/data.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2024 14:13:01] "GET /data/data_men HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2024 14:13:04] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2024 14:13:15] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2024 14:13:15] "GET /static/styles/styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:13:15] "GET /static/script.js HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:13:22] "GET /data_men.html HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2024 14:13:22] "GET /static/styles/data.css HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:13:23] "GET /static/data.js HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:13:23] "GET /data/data_men HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2024 14:14:22] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2024 14:14:22] "GET /static/styles/styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:14:22] "GET /static/script.js HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:15:00] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2024 14:15:00] "GET /static/styles/styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:15:00] "GET /static/script.js HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:15:03] "GET /data_men.html HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2024 14:15:03] "GET /static/styles/data.css HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:15:03] "GET /static/data.js HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:15:03] "GET /data/data_men HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2024 14:15:08] "GET /data_general.html HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2024 14:15:08] "GET /static/styles/data.css HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:15:09] "GET /static/data.js HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:15:09] "GET /data/data_general HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2024 14:15:14] "GET /data_special.html HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2024 14:15:14] "GET /static/styles/data.css HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:15:14] "GET /static/data.js HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:15:14] "GET /data/data_special HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2024 14:41:47] "GET /video_menu_list.html HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2024 14:41:47] "GET /static/styles/video.css HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2024 14:41:47] "GET /static/images/video_1.png HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:41:47] "GET /static/images/video_2.png HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:41:47] "GET /static/images/video_3.png HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:41:47] "GET /static/images/video_4.png HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:41:47] "GET /static/images/video_5.png HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:41:47] "GET /static/images/video_6.png HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:41:47] "GET /static/images/video_7.png HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:41:49] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2024 14:41:50] "GET /static/styles/styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [30/May/2024 14:41:50] "GET /static/script.js HTTP/1.1" 304 -
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://www.dexterslab.com:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+C:\Users\nn\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py:415: UserWarning: Current server name 'localhost:8080' doesn't match configured server name 'www.dexterslab.com:8080'
+  return self.url_map.bind_to_environ(
+127.0.0.1 - - [05/Jun/2024 12:37:55] "GET / HTTP/1.1" 404 -
+127.0.0.1 - - [05/Jun/2024 12:37:55] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Jun/2024 19:08:43] "GET / HTTP/1.1" 404 -
+127.0.0.1 - - [06/Jun/2024 09:41:00] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2024 09:41:00] "GET /static/script.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Jun/2024 09:41:00] "GET /static/styles/styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Jun/2024 09:41:00] "GET /static/favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2024 09:41:03] "GET /slide_show_menu.html HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2024 09:41:06] "GET /slide_1.html HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2024 09:47:47] "GET /slide_show_menu.html HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2024 09:48:25] "GET /slide_1.html HTTP/1.1" 200 -
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://www.dexterslab.com:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+127.0.0.1 - - [06/Jun/2024 14:07:01] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2024 14:07:01] "GET /static/script.js HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2024 14:07:01] "GET /static/styles/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2024 14:07:04] "GET /slide_show_menu.html HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2024 14:09:54] "GET /slide_1.html HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2024 14:10:03] "GET /slide_1.html HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2024 14:10:09] "GET /slide_1.html HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2024 14:10:42] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2024 14:10:42] "GET /static/styles/styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Jun/2024 14:10:42] "GET /static/script.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Jun/2024 14:10:49] "GET /slide_show_menu.html HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2024 14:10:54] "GET /slide_1.html HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2024 14:12:40] "GET /slide_1.html HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 73
+    json_data = json.load(f)
+IndentationError: expected an indented block after 'with' statement on line 72
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 73
+    json_data = json.load(f)
+IndentationError: expected an indented block after 'with' statement on line 72
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 73
+    json_data = json.load(f)
+    ^
+IndentationError: expected an indented block after 'with' statement on line 72
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 71
+    def read
+            ^
+SyntaxError: expected '('
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 71
+    def read_video_json()
+                         ^
+SyntaxError: expected ':'
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://www.dexterslab.com:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 74
+    for index
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 74
+    for index, value
+                    ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 74
+    for index, value
+                    ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 74
+    for index, value in enumerate()
+                                   ^
+SyntaxError: expected ':'
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 75
+    print(json_data)
+    ^
+IndentationError: expected an indented block after 'for' statement on line 74
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://www.dexterslab.com:8080
+Press CTRL+C to quit
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 71
+    def read_video_json(in):
+                        ^^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 71
+    def read_video_json(in):
+                        ^^
+SyntaxError: invalid syntax
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://www.dexterslab.com:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 75
+    if i == index
+                 ^
+SyntaxError: expected ':'
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 75
+    if i == index
+                 ^
+SyntaxError: expected ':'
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://www.dexterslab.com:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 74
+    for i, src in json_data):
+                           ^
+SyntaxError: unmatched ')'
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 74
+    for i, src in json_data):
+                           ^
+SyntaxError: unmatched ')'
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://www.dexterslab.com:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\model.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\model.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 16
+    def                 
+                        ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 16
+    def                 
+                        ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 16
+    def delete                
+                              ^
+SyntaxError: expected '('
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 16
+    def read_video                
+                                  ^
+SyntaxError: expected '('
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 16
+    def get_video_source                
+                                        ^
+SyntaxError: expected '('
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://www.dexterslab.com:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\model.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\model.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 17
+    result = basic_backend.
+                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 17
+    result = basic_backend.
+                           ^
+SyntaxError: invalid syntax
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://www.dexterslab.com:8080
+Press CTRL+C to quit
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 17
+    result = basic_backend.read_video_json)
+                                          ^
+SyntaxError: unmatched ')'
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 17
+    result = basic_backend.read_video_json)(index)
+                                          ^
+SyntaxError: unmatched ')'
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://www.dexterslab.com:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\model.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\model.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\main.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\main.py', reloading
+ * Restarting with stat
+  File "C:\Users\nn\dexterslab\main.py", line 88
+    if __name__ == '__main__':
+    ^^
+SyntaxError: invalid syntax
+  File "C:\Users\nn\dexterslab\main.py", line 88
+    if __name__ == '__main__':
+    ^^
+SyntaxError: invalid syntax
+  File "C:\Users\nn\dexterslab\main.py", line 88
+    if __name__ == '__main__':
+    ^^
+SyntaxError: invalid syntax
+  File "C:\Users\nn\dexterslab\main.py", line 86
+    @app.get(/video)
+             ^
+SyntaxError: invalid syntax
+  File "C:\Users\nn\dexterslab\main.py", line 88
+    if __name__ == '__main__':
+    ^^
+SyntaxError: invalid syntax
+  File "C:\Users\nn\dexterslab\main.py", line 88
+    if __name__ == '__main__':
+    ^^
+SyntaxError: invalid syntax
+  File "C:\Users\nn\dexterslab\main.py", line 88
+    if __name__ == '__main__':
+    ^^
+SyntaxError: invalid syntax
+  File "C:\Users\nn\dexterslab\main.py", line 88
+    if __name__ == '__main__':
+    ^^
+SyntaxError: invalid syntax
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://www.dexterslab.com:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 77
+    json_array = json.dumps([row._asdict() for row in result.fetchall()], ensure_ascii=False).encode('utf-8')
+IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 77
+    json_array = json.dumps([row._asdict() for row in result.fetchall()], ensure_ascii=False).encode('utf-8')
+IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 77
+    json_array = json.dumps([row._asdict() for row in result.fetchall()], ensure_ascii=False).encode('utf-8')
+IndentationError: unexpected indent
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://www.dexterslab.com:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 76
+    return value
+IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 76
+    return value
+IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 76
+    return value
+IndentationError: unexpected indent
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://www.dexterslab.com:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 74
+    json_array = json.dumps([json_data._asdict() for row in .fetchall()], ensure_ascii=False).encode('utf-8')
+                                                            ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 74
+    json_array = json.dumps([json_data._asdict() for row in .fetchall()], ensure_ascii=False).encode('utf-8')
+                                                            ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 74
+    json_array = json.dumps([json_data._asdict() for row in .fetchall()], ensure_ascii=False).encode('utf-8')
+                                                            ^
+SyntaxError: invalid syntax
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://www.dexterslab.com:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 77
+    json_array = json.dumps(, ensure_ascii=False).encode('utf-8')
+                            ^
+SyntaxError: invalid syntax
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://www.dexterslab.com:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 77
+    json_array = json.dumps([value, ensure_ascii=False).encode('utf-8')
+                                                      ^
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '['
+Traceback (most recent call last):
+  File "C:\Users\nn\dexterslab\main.py", line 2, in <module>
+    from Library import model as Model
+  File "C:\Users\nn\dexterslab\Library\model.py", line 1, in <module>
+    from . import basic_backend
+  File "C:\Users\nn\dexterslab\Library\basic_backend.py", line 77
+    json_array = json.dumps([value, ensure_ascii=False).encode('utf-8')
+                                                      ^
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '['
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://www.dexterslab.com:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\Library\\basic_backend.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\main.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\main.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\main.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\main.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\main.py', reloading
+ * Restarting with stat
+  File "C:\Users\nn\dexterslab\main.py", line 86
+    @app.route("/video_source", methods=['''POST'])
+                                         ^
+SyntaxError: unterminated triple-quoted string literal (detected at line 97)
+  File "C:\Users\nn\dexterslab\main.py", line 86
+    @app.route("/video_source", methods=['''POST'])
+                                         ^
+SyntaxError: unterminated triple-quoted string literal (detected at line 97)
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://www.dexterslab.com:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\main.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 187-122-103
+ * Detected change in 'C:\\Users\\nn\\dexterslab\\main.py', reloading
+ * Restarting with stat
+  File "C:\Users\nn\dexterslab\main.py", line 88
+    if flask.req
+                ^
+SyntaxError: expected ':'
+  File "C:\Users\nn\dexterslab\main.py", line 88
+    if flask.req
+                ^
+SyntaxError: expected ':'
+  File "C:\Users\nn\dexterslab\main.py", line 88
+    if flask.req
+                ^
+SyntaxError: expected ':'
+  File "C:\Users\nn\dexterslab\main.py", line 88
+    if req
+          ^
+SyntaxError: expected ':'
+  File "C:\Users\nn\dexterslab\main.py", line 88
+    if request.method == 'POST'
+                               ^
+SyntaxError: expected ':'
+  File "C:\Users\nn\dexterslab\main.py", line 93
+    data = Response(json_array , content_type='application/json; charset=utf-8')
+    ^
+IndentationError: expected an indented block after 'else' statement on line 92

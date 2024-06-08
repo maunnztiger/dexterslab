@@ -83,6 +83,17 @@ def delete_row():
     Model.delete_row(id, table_name)
     return json.dumps({'success':True}), 200, {'Content_type':'application/json; charset=utf-8'}
 
+@app.route("/video_source", methods=['GET','POST'])
+def get_video_source():
+    if request.method == 'POST':
+        data = request.get_json()
+        index = data['index']
+        json_array = Model.get_video_source(index)
+    else:    
+        data = Response(json_array , content_type='application/json; charset=utf-8')
+        return data
+    
+
 if __name__ == '__main__':
     app.run(host="www.dexterslab.com", port=8080, debug=True)
      

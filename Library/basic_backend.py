@@ -37,7 +37,6 @@ def update_data(table_name, newAspect, newValue, id):
         session = connect_to_database()
         model = update.UpdateQueryBuilder(table_name) 
         update_query = model.set(aspect=f"{newAspect}", value = f"{newValue}").where(f"id = {id}").build()
-        print(update_query)
         session.execute(text(update_query))
         session.commit()
     except Exception as e:
@@ -51,7 +50,6 @@ def insert_data(table_name, newid, newaspect, newvalue):
        newaspect = f"'{newaspect}'"
        newvalue = f"'{newvalue}'"
        insert_query = query_builder.insert(id=newid, aspect=newaspect, value=newvalue).build()
-       print(insert_query)
        session.execute(text(insert_query), data)
        session.commit()
     except Exception as e:
@@ -64,12 +62,17 @@ def delete_row(id, table_name):
         data = {'id': id}
         query_builder = delete.DeleteQueryBuilder(table_name)
         delete_query = query_builder.where(condition).build()
-        print(delete_query)
         session.execute(text(delete_query), data)
         session.commit()
     except Exception as e:
         print(e)    
 
    
-
-        
+def read_video_json(index):
+    with open('C:\\Users\\nn\\dexterslab\\video_sources.json') as f:
+        json_data = json.load(f)
+        for i, value in json_data:
+            if i == index:
+                print(value)
+                json_array = json.dumps([value], ensure_ascii=False).encode('utf-8')
+    return json_array
