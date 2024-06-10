@@ -1,12 +1,14 @@
 from flask import Flask, render_template, Response, request, send_from_directory
+from flask import jsonify
 from Library import model as Model
 import json
 import os
 
 app = Flask(__name__)
-
+json_map = {}
 app.config['JSON_AS_ASCII'] = False
 app.config['SERVER_NAME'] = 'www.dexterslab.com:8080'
+
 @app.route("/styles.css")
 def styles_css():
     return render_template("styles/styles.css")
@@ -84,15 +86,21 @@ def delete_row():
     return json.dumps({'success':True}), 200, {'Content_type':'application/json; charset=utf-8'}
 
 @app.route("/video_source", methods=['GET','POST'])
-def get_video_source():
+def set_video_index():
     if request.method == 'POST':
         data = request.get_json()
-        index = data['index']
-        json_array = Model.get_video_source(index)
-    else:    
-        data = Response(json_array , content_type='application/json; charset=utf-8')
-        return data
+        index = int(data['index'])
+        print(index)
+        json_map = json.dumps(Model.read_video_source(index))
+        print(json_map)
+        return json.dumps({'success':True}), 200, {'Content_type':'application/json; charset=utf-8'}
     
+    
+    
+
+
+ 
+            
 
 if __name__ == '__main__':
     app.run(host="www.dexterslab.com", port=8080, debug=True)

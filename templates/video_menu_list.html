@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/video.css') }}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/dataTables.jqueryui.min.css"/>
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <title>Remote from Gitlab</title>
 </head>
 <body>
@@ -12,32 +14,34 @@
     </div>
 
     <div>
-        <a href="index.html">
-            <button id="main_menu" onclick="goBack()">Main Menu  ☰</button>    
-        </a>
-    </div>    
+   
+            <button id="main_menu">Main Menu  ☰</button>    
+     
+    </div>
+   
     <div id="link_container">
-       <div>
-            <a id="0", href="video_1.html"><img  width="20%" height="20%" src="{{ url_for('static', filename='images/video_1.png') }}"></a>
+        <div>
+            <img id="0" width="20%" height="20%" src="{{ url_for('static', filename='images/video_1.png') }}">
         </div>    
         <div>
-            <a id="1" href="video_2.html"><img  width="20%" height="20%" src="{{ url_for('static', filename='images/video_2.png') }}"></a>
+            <img id="1" width="20%" height="20%" src="{{ url_for('static', filename='images/video_2.png') }}">
         </div>  
         <div>
-            <a id="2" href="video_3.html"><img  width="20%" height="20%" src="{{ url_for('static', filename='images/video_3.png') }}"></a>
+            <img id="2" width="20%" height="20%" src="{{ url_for('static', filename='images/video_3.png') }}">
         </div>  
         <div>
-            <a id="3" href="video_4.html"><img  width="20%" height="20%" src="{{ url_for('static', filename='images/video_4.png') }}"></a>
+            <img id="3" width="20%" height="20%" src="{{ url_for('static', filename='images/video_4.png') }}">
         </div>  
         <div>
-            <a id="4" href="video_5.html"><img  width="20%" height="20%" src="{{ url_for('static', filename='images/video_5.png') }}"></a>
+            <img id="4"  width="20%" height="20%" src="{{ url_for('static', filename='images/video_5.png') }}">
         </div>  
         <div>
-            <a id="5" href="video_6.html"><img  width="20%" height="20%" src="{{ url_for('static', filename='images/video_6.png') }}"></a>
+            <img id="5" width="20%" height="20%" src="{{ url_for('static', filename='images/video_6.png') }}">
         </div>  
         <div >
-            <a id="6" href="video_7.html"><img  width="20%" height="20%" src="{{ url_for('static', filename='images/video_7.png') }}"></a>
+            <img id="6" width="20%" height="20%" src="{{ url_for('static', filename='images/video_7.png') }}">
         </div>  
 </div>
+<script src="{{url_for('static', filename='video_menu.js')}}"></script>  
 </body>
 </html>

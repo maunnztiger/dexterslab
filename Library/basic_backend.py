@@ -1,4 +1,5 @@
 from sqlalchemy import create_engine,  text
+from flask import jsonify
 from sqlalchemy.orm import sessionmaker
 from decimal import Decimal
 from . import query_builder as select
@@ -16,7 +17,7 @@ class DecimalEncoder(json.JSONEncoder):
 
 def connect_to_database():
     if os.name =='nt':
-    	file = open('C:\\Users\\nn\\dexterslab\\Postgres.txt', 'r')
+        file = open('C:\\Users\\nn\\dexterslab\\Postgres.txt', 'r')
     else:
         file = open('/home/igor/dexterslab/Postgres.txt', 'r')
     database_url = file.read()
@@ -75,8 +76,8 @@ def delete_row(id, table_name):
 def read_video_json(index):
     with open('C:\\Users\\nn\\dexterslab\\video_sources.json') as f:
         json_data = json.load(f)
-        for i, value in json_data:
-            if i == index:
-                print(value)
-                json_array = json.dumps([value], ensure_ascii=False).encode('utf-8')
-    return json_array
+        print(json_data)
+        value= json_data[index]
+         
+        print(value)
+        return value
