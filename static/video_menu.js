@@ -21,6 +21,12 @@ for(const element of links){
           },
           dataType: "application/json; charset=utf-8"
         })
-        window.location.assign("video_source.html");
+        setTimeout(() => {  window.location.assign("video_source.html"); }, 2000);
+        
     })
+}
+
+
+function goToHomePage(){
+  window.location.assign("index.html");
 }

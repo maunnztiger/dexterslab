@@ -77,7 +77,41 @@ def read_video_json(index):
     with open('C:\\Users\\nn\\dexterslab\\video_sources.json') as f:
         json_data = json.load(f)
         print(json_data)
-        value= json_data[index]
-         
+        value= json_data[index]["src"]         
         print(value)
         return value
+    
+def insert_video_src(video_source):
+    print(video_source)
+    try:
+       session = connect_to_database()
+       query_builder = insert.InsertQueryBuilder('video_source')
+       data = {'id': 0, 'video_source': video_source}
+       src = f"'{video_source}'"
+       insert_query = query_builder.insert(id=0, video_source=src).build()
+       print(insert_query)
+       session.execute(text(insert_query), data)
+       session.commit()
+    except Exception as e:
+        print(e)
+
+def read_video_source_data():        
+    session = connect_to_database()
+    model = select.QueryBuilder('video_source') 
+    query = model.select('video_source').build()
+    result= session.execute(text(query))
+    json_array = json.dumps([row._asdict() for row in result.fetchall()], ensure_ascii=False).encode('utf-8')
+    session.close()
+    return json_array
+
+def delete_video_source(id, table_name):
+    try:
+        session = connect_to_database()
+        condition = "id = :id"
+        data = {'id': id}
+        query_builder = delete.DeleteQueryBuilder(table_name)
+        delete_query = query_builder.where(condition).build()
+        session.execute(text(delete_query), data)
+        session.commit()
+    except Exception as e:
+        print(e)  
