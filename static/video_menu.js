@@ -21,7 +21,7 @@ for(const element of links){
           },
           dataType: "application/json; charset=utf-8"
         })
-        setTimeout(() => {  window.location.assign("video_source.html"); }, 2000);
+        setTimeout(() => {  window.location.assign("video_source.html"); }, 1000);
         
     })
 }

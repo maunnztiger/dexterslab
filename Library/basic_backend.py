@@ -74,13 +74,21 @@ def delete_row(id, table_name):
 
    
 def read_video_json(index):
-    with open('C:\\Users\\nn\\dexterslab\\video_sources.json') as f:
-        json_data = json.load(f)
-        print(json_data)
-        value= json_data[index]["src"]         
-        print(value)
-        return value
-    
+    if os.name == 'nt':
+        with open('C:\\Users\\nn\\dexterslab\\video_sources.json') as f:
+            json_data = json.load(f)
+            print(json_data)
+            value= json_data[index]["src"]         
+            print(value)
+            return value
+    else:
+        with open('/home/igor/dexterslab/video_sources.json') as f:
+            json_data = json.load(f)
+            print(json_data)
+            value= json_data[index]["src"]         
+            print(value)
+            return value
+
 def insert_video_src(video_source):
     print(video_source)
     try:
