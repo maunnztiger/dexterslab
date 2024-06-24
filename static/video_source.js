@@ -1,4 +1,4 @@
-fetch('http://www.dexterslab.com:8080/video_source',{
+fetch('http://192.168.178.53:8080/video_source',{
     method: 'GET',
     headers: {
       'Content-type':'application/json', 

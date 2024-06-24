@@ -1,5 +1,4 @@
 from flask import Flask, render_template, Response, request, send_from_directory
-from flask import jsonify
 from Library import model as Model
 import json
 import os
@@ -7,7 +6,6 @@ import os
 app = Flask(__name__)
 json_map = {}
 app.config['JSON_AS_ASCII'] = False
-app.config['SERVER_NAME'] = 'www.dexterslab.com:8080'
 
 @app.route("/styles.css")
 def styles_css():
@@ -107,5 +105,5 @@ def set_video_source():
             
 
 if __name__ == '__main__':
-    app.run(host="www.dexterslab.com", port=8080, debug=True)
+    app.run(host="0.0.0.0", port=8080, debug=True)
      
