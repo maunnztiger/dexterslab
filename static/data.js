@@ -1,5 +1,5 @@
 let table_name = document.getElementsByTagName('table')[0].id
-  fetch('http://www.dexterslab.com:8080/data/'+table_name,{
+  fetch('http://192.168.178.53:8080/data/'+table_name,{
             method: 'GET',
             headers: {
               'Content-type':'application/json', 

@@ -1,4 +1,4 @@
-fetch('http://www.dexterslab.com:8080/data/data_diagram',{
+fetch('http://192.168.178.53:8080/data/data_diagram',{
             method: 'GET',
        })
       .then(response => response.json())    
