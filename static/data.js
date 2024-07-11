@@ -1,5 +1,5 @@
-let table_name = document.getElementsByTagName('table')[0].id
-  fetch('http://192.168.178.53:8080/data/'+table_name,{
+let table_name = localStorage.tableName;
+  fetch('http://127.0.0.1:8080/data/'+table_name,{
             method: 'GET',
             headers: {
               'Content-type':'application/json', 
@@ -40,8 +40,7 @@ let table_name = document.getElementsByTagName('table')[0].id
       });
 
         
-        console.log(table_name)
-        // Edit record
+       // Edit record
         $('#'+table_name).on('click', 'td.editor-edit', function (e) {
         e.preventDefault();
         let templateIndex = $(this).closest('tr').index();
@@ -101,8 +100,7 @@ let table_name = document.getElementsByTagName('table')[0].id
   }
 
   function createRecord(){
-    let table_name = document.getElementsByTagName('table')[0].id
-    console.log(table_name)
+    let table_name = localStorage.tableName; 
     let idInput = document.getElementById('Id');
     let aspectInput = document.getElementById('aspect2');
     let valueInput = document.getElementById('value2');
@@ -137,7 +135,7 @@ let table_name = document.getElementsByTagName('table')[0].id
   }
 
   function saveChanges() {
-    let table_name = document.getElementsByTagName('table')[0].id
+    let table_name = localStorage.tableName;
     console.log(table_name)
     let aspectInput = document.getElementById('aspect');
     let valueInput = document.getElementById('value');
@@ -171,7 +169,7 @@ let table_name = document.getElementsByTagName('table')[0].id
   }
 
   function deleteRow(datatableIndex){
-    let table_name = document.getElementsByTagName('table')[0].id
+    let table_name = localStorage.tableName;
     console.log(table_name)
     this.obj = {};
     this.obj.id = datatableIndex;

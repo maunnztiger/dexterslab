@@ -15,12 +15,12 @@
         <script src="{{url_for('static', filename='script.js')}}"></script>
         <div id="menu">
             <button id="menuButton" onclick="toggleMenu()">Main Menu ☰</button>    
-            <a id="data_general" href="data_general.html">Homeoffice General Data</a>
-            <a id="data_men" href="data_men.html">Men in Homeoffice Data</a>
-            <a id="data_special" href="data_special.html">Homeoffice Special Data</a>
-            <a id="data_advantages" href="data_advantages.html">Homeoffice: Advantages</a>
-            <a id="data_disadvantages" href="data_disadvantages.html">Homeoffice: Disadvantages</a>
-            <a id="data_european_comparation" href="data_european_comparation.html">Homeoffice in Europe</a>
+            <a id="data_general" href="data.html" onclick = "localStorage.tableName = 'data_general' ">Homeoffice General Data</a>
+            <a id="data_men" href="data.html" onclick = "localStorage.tableName = 'data_men' ">Men in Homeoffice Data</a>
+            <a id="data_special" href="data.html" onclick = "localStorage.tableName = 'data_special' ">Homeoffice Special Data</a>
+            <a id="data_advantages" href="data.html" onclick="localStorage.tableName = 'data_advantages' ">Homeoffice: Advantages</a>
+            <a id="data_disadvantages" href="data.html" onclick="localStorage.tableName = 'data_disadvantages' ">Homeoffice: Disadvantages</a>
+            <a id="data_european_comparation" href="data.html" onclick="localStorage.tableName = 'data_european_comparation' ">Homeoffice in Europe</a>
             <a id="video_list" href="video_menu_list.html">Homeoffice: Video Statements</a>
             <a id="slideShow" href="slide_show_menu.html">Slideshows</a>
         </div>
