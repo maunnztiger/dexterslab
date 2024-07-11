@@ -1,5 +1,5 @@
 let table_name = localStorage.tableName;
-  fetch('http://127.0.0.1:8080/data/'+table_name,{
+  fetch('http://192.168.178.53:8080/data/'+table_name,{
             method: 'GET',
             headers: {
               'Content-type':'application/json', 
