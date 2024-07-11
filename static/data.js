@@ -1,7 +1,9 @@
 let table_name = localStorage.tableName;
 let headline_value = localStorage.linkText;
 const headline = document.getElementById('headline')
+const title = document.querySelector('title')
 headline.textContent = headline_value;
+title.textContent = headline_value;
 console.log(headline_value);
   fetch('http://192.168.178.53:8080/data/'+table_name,{
             method: 'GET',
