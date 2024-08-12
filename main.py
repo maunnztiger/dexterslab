@@ -29,7 +29,7 @@ def data_js():
 
 @app.route("/")
 def hellou():
-    return render_template("index.html")
+    return render_template("login.html")
 
 @app.route("/<string:page>")
 def data_html(page):  
@@ -105,5 +105,5 @@ def set_video_source():
             
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=8080, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
      
