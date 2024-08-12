@@ -29,7 +29,7 @@ def data_js():
 
 @app.route("/")
 def hellou():
-    return render_template("login.html")
+    return render_template("index.html")
 
 @app.route("/<string:page>")
 def data_html(page):  
