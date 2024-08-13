@@ -29,7 +29,7 @@ pipeline {
          stage('Install dependencies') {
             steps {
                 // Install any dependencies listed in requirements.txt
-                // sh 'bash -c "source $VENV_PATH/bin/activate"'
+                 sh 'bash -c "source $VENV_PATH/bin/activate"'
             }
         }
 
