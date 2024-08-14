@@ -40,4 +40,4 @@ fetch('http://192.168.178.53:5000/data/data_diagram',{
     chart.canvas.parentNode.style.position = 'absolute'; 
     
       })
-console.log("Jenkins")
+console.log("Jenkins__")
