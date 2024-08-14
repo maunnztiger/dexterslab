@@ -30,10 +30,7 @@ pipeline {
          stage('Install dependencies') {
             steps {
                 // Install any dependencies listed in requirements.txt
-                 sh '''
-                source $VENV_PATH/bin/activate
-                pip install -r requirements.txt
-                '''
+                 sh 'bash -c "source $VENV_PATH/bin/activate && pip install -r requirements.txt"'
         }
         }
         stage('Test') {
@@ -41,9 +38,8 @@ pipeline {
                 // Run your tests here. This is just a placeholder.
                 // For example, if you had tests, you might run: pytest
                 echo "Assuming tests are run here."
-                sh '''
-                cd /home/igor/BDD_SELENIUM_BEHAVE/ && sudo -u jenkins behave features/create_button.feature
-                '''
+                sh 'bash -c "cd /home/igor/BDD_SELENIUM_BEHAVE/ && sudo -u jenkins behave features/create_button.feature"'
+        
                  }
             }
 
@@ -58,8 +54,8 @@ pipeline {
                     // If you're using a PaaS (Platform as a Service), 
                     //you might use a specific CLI tool for that platform
                     echo 'Deploying application...'
-                    sh 'cp -ar . /home/igor/dexterslab'
-                    sh 'systemctl restart dexterslab.service'
+                    sh 'bash -c "cp -ar . /home/igor/dexterslab"'
+                    sh 'bash -c "systemctl restart dexterslab.service"'
                 }
             }
         }
