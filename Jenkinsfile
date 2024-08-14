@@ -11,7 +11,8 @@ pipeline {
             steps {
                 // Checkout code from a source control 
                 //management system (e.g., Git)
-                git url: 'https://github.com/maunnztiger/dexterslab.git', branch: 'master'
+                git url: 'git@github.com:maunnztiger/dexterslab.git', branch: 'master'
+
             }
         }
 
