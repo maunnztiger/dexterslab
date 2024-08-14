@@ -19,11 +19,11 @@ pipeline {
         stage('Setup Virtual Environment') {
             steps {
                 script {
-                    // Check for the virtual environment, 
-                    // create it if it doesn't exist
-                    sh 'bash -c "python3 -m virtualenv $VENV_PATH"'
-                    // Activate the virtual environment
-                    sh 'bash -c "source $VENV_PATH/bin/activate"'
+                     sh '''
+                        if [ ! -d "$VENV_PATH" ]; then
+                        python3 -m virtualenv $VENV_PATH
+                        fi
+                    '''
                 }
             }
         }
@@ -39,8 +39,8 @@ pipeline {
                 // Run your tests here. This is just a placeholder.
                 // For example, if you had tests, you might run: pytest
                 echo "Assuming tests are run here."
-                sh '''#!/bin/bash 
-                        "/home/igor/BDD_SELENIUM_BEHAVE/run_tests.sh"
+                sh '''
+                "/home/igor/BDD_SELENIUM_BEHAVE/run_tests.sh"
                 '''
                  }
             }
@@ -57,6 +57,7 @@ pipeline {
                     //you might use a specific CLI tool for that platform
                     echo 'Deploying application...'
                     sh 'cp -ar . /home/igor/dexterslab'
+                    sh 'systemctl restart dexterslab.service'
                 }
             }
         }
