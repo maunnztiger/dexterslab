@@ -35,7 +35,7 @@ pipeline {
                 pip install -r requirements.txt
                 '''
         }
-
+        }
         stage('Test') {
             steps {
                 // Run your tests here. This is just a placeholder.
@@ -72,5 +72,4 @@ pipeline {
             sh 'rm -rf ${VIRTUAL_ENV_DIR}'
         }
     }
-}
 }
