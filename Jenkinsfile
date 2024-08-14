@@ -30,8 +30,10 @@ pipeline {
          stage('Install dependencies') {
             steps {
                 // Install any dependencies listed in requirements.txt
-                 sh 'bash -c "source $VENV_PATH/bin/activate"'
-            }
+                 sh '''
+                source $VENV_PATH/bin/activate
+                pip install -r requirements.txt
+                '''
         }
 
         stage('Test') {
@@ -40,7 +42,7 @@ pipeline {
                 // For example, if you had tests, you might run: pytest
                 echo "Assuming tests are run here."
                 sh '''
-                "/home/igor/BDD_SELENIUM_BEHAVE/run_tests.sh"
+                cd /home/igor/BDD_SELENIUM_BEHAVE/ && sudo -u jenkins behave features/create_button.feature
                 '''
                  }
             }
