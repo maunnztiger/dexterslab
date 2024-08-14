@@ -38,7 +38,7 @@ pipeline {
                 // Run your tests here. This is just a placeholder.
                 // For example, if you had tests, you might run: pytest
                 echo "Assuming tests are run here."
-                sh 'bash -c "cd /home/igor/BDD_SELENIUM_BEHAVE/ && sudo -u jenkins /home/igor/BDD_SELENIUM_BEHAVE/run_tests_sh"'
+                sh 'bash -c "cd /home/igor/BDD_SELENIUM_BEHAVE/ && sudo -u jenkins /home/igor/BDD_SELENIUM_BEHAVE/run_tests.sh"'
         
                  }
             }
