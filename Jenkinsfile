@@ -54,7 +54,7 @@ pipeline {
                     // If you're using a PaaS (Platform as a Service), 
                     //you might use a specific CLI tool for that platform
                     echo 'Deploying application...'
-                    sh 'bash -c "sudo -u jenkins cp -ar . /home/igor/dexterslab"'
+                    sh 'bash -c "sudo -u jenkins cp -rf . /home/igor/dexterslab"'
                     sh 'bash -c "sudo -u jenkins systemctl restart dexterslab.service"'
                 }
             }
