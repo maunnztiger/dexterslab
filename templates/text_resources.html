@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/video.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <title>Text Resourcen</title>
+</head>
+<body>
+    <div>
+        <button id="main_menu" onclick="goToHomePage()">Main Menu  ☰</button>    
+    </div>
+    <div>
+        <button id="text_list">Text Menu ☰</button> 
+    </div>    
+    <div id="image_container">
+        <div id=container_a>
+            <img id="0" width="200" height="200" src="{{ url_for('static', filename='images/report_65.png') }}" data-text-resource="https://www.boeckler.de/pdf/p_wsi_report_65_2021.pdf"/>
+        </div>
+        <div>    
+            <img id="1" width="200" height="200" src="{{ url_for('static', filename='images/boeckler_impuls.png') }}" data-text-resource="https://www.boeckler.de/de/boeckler-impuls-homeoffice-bleibt-46503.htm"/>
+        </div id=container_b>
+    </div>
+    <div id="iframe_container" style="text-align: center">
+        <iframe id="iframe" frameborder="0"  width="800" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>    
+    <script src="{{url_for('static', filename='text.js')}}"></script> 
+</body>
+</html>

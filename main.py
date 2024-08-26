@@ -87,27 +87,6 @@ def delete_row():
     Model.delete_row(id, table_name)
     return json.dumps({'success':True}), 200, {'Content_type':'application/json; charset=utf-8'}
 
-@app.route("/video_source", methods=['GET','POST'])
-def set_video_source():
-    if request.method == 'POST':
-        data = request.get_json()
-        index = int(data['index'])
-        print(index)
-        Model.insert_video_source(index)
-        return json.dumps({'success':True}), 200, {'Content_type':'application/json; charset=utf-8'}
-    else:
-        json_data = Model.read_video_source_data()
-        resp = Response(json_data , content_type='application/json; charset=utf-8')
-        return resp
-        
-
-    
-    
-
-
- 
-            
-
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000, debug=True)
      

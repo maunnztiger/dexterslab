@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/video.css') }}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/dataTables.jqueryui.min.css"/>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Remote from Gitlab</title>
+</head>
+<body>
+    <div>
+        <h1 style=" text-align: center">Video List</h1>
+    </div>
+
+    <div>
+     <button id="main_menu" onclick="goToHomePage()">Main Menu  ☰</button>    
+    </div>
+   
+    <div id="link_container">
+        <div>
+            <img id="0" data-video-source="https://www.youtube.com/embed/aMxFcrCg4To?si=AlyAcUfmWaw01ltO" width="20%" height="20%" src="{{ url_for('static', filename='images/video_1.png') }}">
+        </div>    
+        <div>
+            <img id="1" data-video-source="https://www.youtube.com/embed/LktfiaxjTIc?si=edDaeLEuM1ckZ8Pn" width="20%" height="20%" src="{{ url_for('static', filename='images/video_2.png') }}">
+        </div>  
+        <div>
+            <img id="2" data-video-source="https://www.youtube.com/embed/u__6KRlb-qU?si=XyvwGrSDd-UmHGKa" width="20%" height="20%" src="{{ url_for('static', filename='images/video_3.png') }}">
+        </div>  
+        <div>
+            <img id="3" data-video-source="https://www.youtube.com/embed/qOoiWVgWbYY?si=8G3sfUXARJl700DD" width="20%" height="20%" src="{{ url_for('static', filename='images/video_4.png') }}">
+        </div>  
+        <div>
+            <img id="4" data-video-source="https://www.youtube.com/embed/Dl2Dktlm1o8?si=ADCkmELW9uk7iWNz"  width="20%" height="20%" src="{{ url_for('static', filename='images/video_5.png') }}">
+        </div>  
+        <div>
+            <img id="5" data-video-source="https://www.youtube.com/embed/l9jmb8TE7sw?si=ai255fyIG-8tHqck" width="20%" height="20%" src="{{ url_for('static', filename='images/video_6.png') }}">
+        </div>  
+        <div >
+            <img id="6" data-video-source="https://www.youtube.com/embed/6BstoFpubUg?si=hpnSQ43P-QlqYE3X" width="20%" height="20%" src="{{ url_for('static', filename='images/video_7.png') }}">
+        </div>  
+</div>
+<div id="video_container" style="text-align: center">
+    <iframe id="video_source" width="800" height="500" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+</div> 
+<button id="video_list">Video Menu ☰</button>  
+<script src="{{url_for('static', filename='video_resource.js')}}"></script>  
+</body>
+</html>
