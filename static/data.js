@@ -216,3 +216,5 @@ console.log(headline_value);
     console.log('graph.js')
     location.assign('diagram.html')
   }
+
+  console.log('got it');
