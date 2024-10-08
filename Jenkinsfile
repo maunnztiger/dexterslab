@@ -20,10 +20,10 @@ pipeline {
             steps {
                 script {
                      sh '''
-                        if [ ! -d "$VENV_PATH" ]; then
-                        python3 -m venv $VENV_PATH
-                        bash -c "source $VENV_PATH/bin/activate && curl https://bootstrap.pypa.io/get-pip.py | python"
-                        fi
+                    
+                        bash -c 'python3 -m venv $VENV_PATH'
+                        bash -c 'source $VENV_PATH/bin/activate && curl https://bootstrap.pypa.io/get-pip.py | python'
+                    
                     '''
                 }
             }
