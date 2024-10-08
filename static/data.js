@@ -217,4 +217,4 @@ console.log(headline_value);
     location.assign('diagram.html')
   }
 
-  console.log('got it too');
+  console.log('got it');

@@ -21,7 +21,7 @@ pipeline {
                 script {
                      sh '''
                         if [ ! -d "$VENV_PATH" ]; then
-                        python3 -m venv $VENV_PATH
+                        python3 -m virtualenv $VENV_PATH
                         bash -c "source $VENV_PATH/bin/activate && curl https://bootstrap.pypa.io/get-pip.py | python"
                         fi
                     '''
