@@ -55,8 +55,8 @@ pipeline {
                     // If you're using a PaaS (Platform as a Service), 
                     //you might use a specific CLI tool for that platform
                     echo 'Deploying application...'
-                    sh 'bash -c "scp -o StrictHostKeyChecking=no . jenkins@192.168.178.54:/home/igor/dexterslab"'
-                    sh 'bash -c "ssh -o StrictHostKeyChecking=no jenkins@192.168.178.54 \'sudo systemctl restart dexterslab.service\'"'
+                    sh 'bash -c "scp -o StrictHostKeyChecking=no . igor@192.168.178.54:/home/igor/dexterslab"'
+                    sh 'bash -c "ssh -o StrictHostKeyChecking=no igor@192.168.178.54 \'sudo systemctl restart dexterslab.service\'"'
                 }
             }
         }
