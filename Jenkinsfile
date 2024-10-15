@@ -67,10 +67,7 @@ pipeline {
             // Clean up after the pipeline runs
             echo 'Cleaning up...'
             sh 'rm -rf ${VIRTUAL_ENV_DIR}'
-            sh  ''''
-                set +e
-                ..
-                '''
+            sh  'set +e'
         }
     }
 }
