@@ -56,7 +56,7 @@ pipeline {
                     //you might use a specific CLI tool for that platform
                     echo 'Deploying application...'
                     sh 'bash -c "sudo -u jenkins cp -rf . /home/igor/dexterslab"'
-                    sh 'bash -c "sudo -u jenkins systemctl restart dexterslab-service.service"'
+                    sh 'bash -c "sudo systemctl restart dexterslab-service.service"'
                 }
             }
         }
