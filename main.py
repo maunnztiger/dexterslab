@@ -88,5 +88,5 @@ def delete_row():
     return json.dumps({'success':True}), 200, {'Content_type':'application/json; charset=utf-8'}
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True, ssl_context=('./SSL-CERTS/cert.pem', './SSL-CERTS/key.pem'))
      

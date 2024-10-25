@@ -5,7 +5,7 @@ const title = document.querySelector('title')
 headline.textContent = headline_value;
 title.textContent = headline_value;
 console.log(headline_value);
-  fetch('http://192.168.178.54:5000/data/'+table_name,{
+  fetch('https://192.168.178.54:5000/data/'+table_name,{
             method: 'GET',
             headers: {
               'Content-type':'application/json', 
@@ -17,7 +17,9 @@ console.log(headline_value);
       .then(data => {
         let table_name = document.getElementsByTagName('table')[0].id
         const table = new DataTable('#'+table_name, {
+
         autoWidth: false,
+        "bDestroy": true,
         pageLength: 50,     
         columnDefs: [
           {

@@ -13,21 +13,25 @@
 <body>
         
         <script src="{{url_for('static', filename='script.js')}}"></script>
+
         <div id="menu">
-            <button id="menuButton" onclick="toggleMenu()">Main Menu ☰</button>    
-            <a id="data_general" href="data.html" onclick = "localStorage.tableName = 'data_general'; localStorage.linkText = 'Homeoffice General Data' ">Homeoffice General Data</a>
-            <a id="data_men" href="data.html" onclick = "localStorage.tableName = 'data_men'; localStorage.linkText ='Men in Homeoffice Data' ">Men in Homeoffice Data</a>
-            <a id="data_special" href="data.html" onclick = "localStorage.tableName = 'data_special'; localStorage.linkText = 'Homeoffice Special Data' ">Homeoffice Special Data</a>
-            <a id="data_advantages" href="data.html" onclick="localStorage.tableName = 'data_advantages'; localStorage.linkText='Homeoffice: Advantages' ">Homeoffice: Advantages</a>
-            <a id="data_disadvantages" href="data.html" onclick="localStorage.tableName = 'data_disadvantages'; localStorage.linkText='Homeoffice: Disadvantages' ">Homeoffice: Disadvantages</a>
-            <a id="data_european_comparation" href="data.html" onclick="localStorage.tableName = 'data_european_comparation'; localStorage.linkText='Homeoffice in Europe' ">Homeoffice in Europe</a>
-            <a id="video_list" href="video_resource.html">Homeoffice: Video Statements</a>
-            <a id="text_resources" href="text_resources.html">Text-Resourcen</a>
-            
+            <button id="menuButton" onclick="toggleMenu()">Main Menu ☰</button>
+            <a id="popupButton" class="open_popup_button" onclick="openCreateEditor()">Data-Tables</a>
+            <a id="video_list" href="video_resource.html">Video Statements</a>
+            <a id="text_resources" href="text_resources.html">Text-Resourcen</a>     
+            <div class="overlay" id="overlay" onclick="closeEditor()"></div>
+            <div class="popup" id="popup">
+                    <a id="data_general" href="data.html" onclick = "localStorage.tableName = 'data_general'; localStorage.linkText = 'Homeoffice General Data' ">Homeoffice General Data</a>
+                    <a id="data_special" href="data.html" onclick = "localStorage.tableName = 'data_special'; localStorage.linkText = 'Homeoffice Special Data' ">Homeoffice Special Data</a>
+                    <a id="data_men" href="data.html" onclick = "localStorage.tableName = 'data_men'; localStorage.linkText ='Men in Homeoffice Data' ">Men in Homeoffice Data</a>                    
+                    <a id="data_advantages" href="data.html" onclick="localStorage.tableName = 'data_advantages'; localStorage.linkText='Homeoffice: Advantages' ">Homeoffice: Advantages</a>
+                    <a id="data_disadvantages" href="data.html" onclick="localStorage.tableName = 'data_disadvantages'; localStorage.linkText='Homeoffice: Disadvantages' ">Homeoffice: Disadvantages</a>
+                    <a id="data_european_comparation" href="data.html" onclick="localStorage.tableName = 'data_european_comparation'; localStorage.linkText='Homeoffice in Europe' ">Homeoffice in Europe</a>
+                    <br>
+            </div>
         </div>
-       
         <div id="content">
-            <h2>Homeoffice reporting tool</h2>
+            <h2>Homeoffice Reporting Tool</h2>
         </div>
 
         <div id="front_page_image">
