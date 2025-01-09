@@ -55,12 +55,7 @@ pipeline {
                     // If you're using a PaaS (Platform as a Service), 
                     //you might use a specific CLI tool for that platform
                     echo 'Deploying application...'
-                    sh 'bash -c "ssh -i /var/lib/jenkins/.ssh/id_rsa igor@192.168.178.54 \'sudo mkdir tmp\'"'
-                    sh 'bash -c "ssh -i /var/lib/jenkins/.ssh/id_rsa igor@192.168.178.54 \'sudo chown igor:igor tmp/ && sudo chmod 777 tmp/\'"'
-                    sh 'bash -c "scp -i /var/lib/jenkins/.ssh/id_rsa -r . igor@192.168.178.54:/home/igor/tmp"'
-                    sh 'bash -c "ssh -i /var/lib/jenkins/.ssh/id_rsa igor@192.168.178.54 \'sudo cp -rf /home/igor/tmp/. /home/igor/dexterslab\'"'
-                    sh 'bash -c "ssh -i /var/lib/jenkins/.ssh/id_rsa igor@192.168.178.54 \'sudo rm -rf /home/igor/tmp/\'"'
-                    sh 'bash -c "ssh -i /var/lib/jenkins/.ssh/id_rsa igor@192.168.178.54 \'sudo systemctl restart dexterslab.service\'"'
+            
                 }
             }
         }

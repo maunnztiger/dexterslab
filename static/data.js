@@ -5,7 +5,7 @@ const title = document.querySelector('title')
 headline.textContent = headline_value;
 title.textContent = headline_value;
 console.log(headline_value);
-  fetch('https://192.168.178.54:5000/data/'+table_name,{
+  fetch('https://192.168.178.24:5000/data/'+table_name,{
             method: 'GET',
             headers: {
               'Content-type':'application/json', 
