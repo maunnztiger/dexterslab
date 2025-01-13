@@ -2,7 +2,7 @@ from sqlalchemy import create_engine,  text
 from flask import jsonify
 from sqlalchemy.orm import sessionmaker
 from decimal import Decimal
-from . import query_builder as select
+from . import read_query_builder as select
 from . import update_query_builder as update
 from . import insert_into_query_builder as insert
 from . import delete_query_builder as delete
