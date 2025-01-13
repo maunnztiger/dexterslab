@@ -1,13 +1,8 @@
 from sqlalchemy import create_engine,  text
-from flask import jsonify
 from sqlalchemy.orm import sessionmaker
 from decimal import Decimal
-from . import read_query_builder as select
-from . import update_query_builder as update
-from . import insert_into_query_builder as insert
-from . import delete_query_builder as delete
+from . import query_builder as object
 import json
-import os
 
 class DecimalEncoder(json.JSONEncoder):
     def default(self, o):
@@ -16,10 +11,7 @@ class DecimalEncoder(json.JSONEncoder):
         return super().default(o)
 
 def connect_to_database():
-    if os.name =='nt':
-        file = open('C:\\Users\\nn\\dexterslab\\Postgres.txt', 'r')
-    else:
-        file = open('/home/igor/dexterslab/Postgres.txt', 'r')
+    file = open('/home/igor/dexterslab/Postgres.txt', 'r')
     database_url = file.read()
     connection_str = f'{database_url}'        
     engine = create_engine(connection_str)
@@ -29,7 +21,7 @@ def connect_to_database():
 
 def read_data(table_name):
     session = connect_to_database()
-    model = select.QueryBuilder(table_name) 
+    model = object.QueryBuilder(table_name) 
     query = model.select('id', 'aspect', 'value').build()
     result= session.execute(text(query))
     json_array = json.dumps([row._asdict() for row in result.fetchall()], ensure_ascii=False).encode('utf-8')
@@ -40,8 +32,8 @@ def read_data(table_name):
 def update_data(table_name, newAspect, newValue, id):
     try:
         session = connect_to_database()
-        model = update.UpdateQueryBuilder(table_name) 
-        update_query = model.set(aspect=f"{newAspect}", value = f"{newValue}").where(f"id = {id}").build()
+        model = object.QueryBuilder(table_name) 
+        update_query = model.set(aspect=f"{newAspect}", value = f"{newValue}").set_where(f"id = {id}").build()
         session.execute(text(update_query))
         session.commit()
     except Exception as e:
@@ -50,7 +42,7 @@ def update_data(table_name, newAspect, newValue, id):
 def insert_data(table_name, newid, newaspect, newvalue):
     try:
        session = connect_to_database()
-       query_builder = insert.InsertQueryBuilder(table_name)
+       query_builder = object.QueryBuilder(table_name)
        data = {'id': newid, 'aspect': newaspect, 'value': newvalue}
        newaspect = f"'{newaspect}'"
        newvalue = f"'{newvalue}'"
@@ -65,8 +57,8 @@ def delete_row(id, table_name):
         session = connect_to_database()
         condition = "id = :id"
         data = {'id': id}
-        query_builder = delete.DeleteQueryBuilder(table_name)
-        delete_query = query_builder.where(condition).build()
+        query_builder = object.QueryBuilder(table_name)
+        delete_query = query_builder.delete_where(condition).build()
         session.execute(text(delete_query), data)
         session.commit()
     except Exception as e:
