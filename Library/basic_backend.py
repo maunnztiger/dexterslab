@@ -3,6 +3,7 @@ from sqlalchemy.orm import sessionmaker
 from decimal import Decimal
 from . import query_builder as object
 import json
+import os
 
 class DecimalEncoder(json.JSONEncoder):
     def default(self, o):
@@ -11,7 +12,10 @@ class DecimalEncoder(json.JSONEncoder):
         return super().default(o)
 
 def connect_to_database():
-    file = open('/home/igor/dexterslab/Postgres.txt', 'r')
+    if os.name == 'nt':
+        file = open('C:\\Users\\westp\\dexterslab\\Postgres.txt','r')
+    else:
+        file = open('/home/igor/dexterslab/Postgres.txt', 'r')
     database_url = file.read()
     connection_str = f'{database_url}'        
     engine = create_engine(connection_str)
