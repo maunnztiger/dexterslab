@@ -1,9 +1,30 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" version="26.1.1">
   <diagram name="Seite-1" id="mvV_WXxqjtqjQ_1nEDa_">
-    <mxGraphModel>
+    <mxGraphModel dx="1050" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="4mOqDQNymZmEqmf0rOy2-1" value="&lt;b&gt;PostgreSQL&lt;br&gt;Data-Model&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="30" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4mOqDQNymZmEqmf0rOy2-2" value="&lt;b&gt;Spring boot Backend&lt;/b&gt;&lt;br&gt;&lt;div&gt;- REST-API&lt;/div&gt;&lt;div&gt;- Kotlin&lt;/div&gt;&lt;div&gt;- Spring-Security&lt;br&gt;-Front-Controller&lt;br&gt;&lt;br&gt;- &lt;i&gt;skalierbar für weitere Services (Command-Pattern)&lt;br&gt;- Services bdeutet Aktionen, keine Objekte&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;-User benutzen Dienste, keine Objekte&lt;/i&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="30" width="360" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="4mOqDQNymZmEqmf0rOy2-3" value="&lt;b&gt;Angular Frontend&lt;/b&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;- beinhaltet Funktionen, die ans Backend geroutet werden&lt;br&gt;- Backend verteilt Funktionalität je nach Rollenberehtigung&lt;/i&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="220" width="250" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="4mOqDQNymZmEqmf0rOy2-4" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=-0.001;entryY=0.448;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="4mOqDQNymZmEqmf0rOy2-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="70" as="sourcePoint" />
+            <mxPoint x="360" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4mOqDQNymZmEqmf0rOy2-5" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0.046;entryY=0.713;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="4mOqDQNymZmEqmf0rOy2-3" target="4mOqDQNymZmEqmf0rOy2-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="130" as="sourcePoint" />
+            <mxPoint x="390" y="162" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
