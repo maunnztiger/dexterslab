@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
-    <style>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="{{url_for('static', filename='auth.js')}}"></script>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
        
-    </style>
     <title>Homeoffice 2024</title>
 </head>
 <body>
         
-        <script src="{{url_for('static', filename='script.js')}}"></script>
+        
 
         <div id="menu">
             <button id="menuButton" onclick="toggleMenu()">Main Menu ☰</button>
@@ -33,7 +34,26 @@
         <div id="content">
             <h2>Homeoffice Reporting Tool</h2>
         </div>
-
+        <div>
+            <p>
+                <button onclick="openUserEditor()">CREATE USER</button>    
+            </p>
+        </div>  
+        <div id="add_user">
+            <div class="user_container">
+                <h2>Add User</h2>
+                <label for="username">Username:</label>
+                <input type="text" id="username">
+                <br>
+                <label for="Password">Password:</label>
+                <input type="password" id="password">
+                <br>
+            </div>    
+            <div class="button_container">
+                <button onclick="saveUser()">Save User</button>
+                <button onclick="closeUserEditor()">Cancel</button>
+            </div>    
+        </div>
         <div id="front_page_image">
             <img id="picture" src="{{ url_for('static', filename='images/images_3.jpg') }}">
         </div>

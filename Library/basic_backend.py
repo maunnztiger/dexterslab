@@ -1,6 +1,7 @@
 from sqlalchemy import create_engine,  text
 from sqlalchemy.orm import sessionmaker
 from decimal import Decimal
+from werkzeug.security import generate_password_hash, check_password_hash
 from . import query_builder as object
 import json
 import os
@@ -12,11 +13,8 @@ class DecimalEncoder(json.JSONEncoder):
         return super().default(o)
 
 def connect_to_database():
-    if os.name == 'nt':
-        file = open('C:\\Users\\westp\\dexterslab\\Postgres.txt','r')
-    else:
-        file = open('/home/igor/dexterslab/Postgres.txt', 'r')
-    database_url = file.read()
+ 
+    database_url = os.environ.get('POSTGRES_URL')
     connection_str = f'{database_url}'        
     engine = create_engine(connection_str)
     Session = sessionmaker(bind=engine)
@@ -55,6 +53,22 @@ def insert_data(table_name, newid, newaspect, newvalue):
        session.commit()
     except Exception as e:
         print(e)
+
+def add_user(username, password):
+    try:
+        hashed_pw = generate_password_hash(password) 
+        session = connect_to_database()
+        print("DATA:", {'username': username, 'password_hash': hashed_pw})
+        session.execute(
+            text("INSERT INTO users (username, password_hash) VALUES (:username, :password_hash)"),
+            {'username': username, 'password_hash': hashed_pw}
+        )
+        session.flush()
+        session.commit()
+    except Exception as e:
+        print(e)    
+
+
 
 def delete_row(id, table_name):
     try:

@@ -13,3 +13,5 @@ def insert_data(table_name, newid, newaspect, newvalue):
 def delete_row(id, table_name):
         basic_backend.delete_row(id, table_name)
 
+def add_new_user(username, password):
+        basic_backend.add_user(username, password)

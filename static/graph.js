@@ -1,4 +1,4 @@
-fetch('https://192.168.178.54:5000/data/data_diagram',{
+fetch('https://192.168.178.36:5000/data/data_diagram',{
             method: 'GET',
        })
       .then(response => response.json())    

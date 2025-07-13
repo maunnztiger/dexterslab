@@ -1,9 +1,11 @@
 from flask import Flask, render_template, Response, request, send_from_directory
+from flask_cors import CORS
 from Library import model as Model
 import json
 import os
 
 app = Flask(__name__)
+CORS(app, origins=["http://localhost:5000"])
 json_map = {}
 app.config['JSON_AS_ASCII'] = False
 
@@ -30,10 +32,6 @@ def data_js():
 @app.route("/")
 def hellou():
     return render_template("index.html")
-
-@app.route("/login")
-def login():
-    return render_template("login.html")
 
 @app.route("/<string:page>")
 def data_html(page):  
@@ -87,6 +85,12 @@ def delete_row():
     Model.delete_row(id, table_name)
     return json.dumps({'success':True}), 200, {'Content_type':'application/json; charset=utf-8'}
 
-if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5000, debug=True, ssl_context=('./SSL-CERTS/cert.pem', './SSL-CERTS/key.pem'))
-     
+@app.route("/add_new_user", methods=['POST'])
+def add_user():
+    data = request.get_json()
+    username = data["username"]
+    password = data['password']
+    print(username, password)
+    Model.add_new_user(username, password) 
+    return json.dumps({'success':True}), 200, {'Content_type':'application/json; charset=utf-8'}
+

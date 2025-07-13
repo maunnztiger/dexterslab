@@ -5,7 +5,7 @@ const title = document.querySelector('title')
 headline.textContent = headline_value;
 title.textContent = headline_value;
 console.log(headline_value);
-  fetch('https://192.168.178.24:5000/data/'+table_name,{
+  fetch('http://localhost:5000/data/'+table_name,{
             method: 'GET',
             headers: {
               'Content-type':'application/json', 
@@ -136,7 +136,7 @@ console.log(headline_value);
       },
       dataType: "application/json; charset=utf-8"
     })
-    closeCreateEditor();
+    closeUserEditor();
     setTimeout(function(){
       window.location.reload(location.href);
    }, 500);
@@ -219,4 +219,3 @@ console.log(headline_value);
     location.assign('diagram.html')
   }
 
-  console.log('got it too');

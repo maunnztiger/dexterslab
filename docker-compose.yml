@@ -1,0 +1,24 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: testdb
+    volumes:
+      - ./Database/testdb_dumb.sql:/docker-entrypoint-initdb.d/testdb.sql
+
+    ports:
+      - "5432:5432"
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
+    environment:
+      - POSTGRES_URL=postgresql://postgres:root@db:5432/testdb
+    depends_on:
+      - db
+    volumes:
+      - .:/app
+    command: ["gunicorn", "-b", "0.0.0.0:5000", "main:app"]
