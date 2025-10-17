@@ -15,3 +15,10 @@ def delete_row(id, table_name):
 
 def add_new_user(username, password):
         basic_backend.add_user(username, password)
+
+def login(username):
+        result = basic_backend.login_user(username)
+        return result
+def read_data_with_index(table_name, id):
+        result = basic_backend.read_data_with_index(table_name, id)
+        return result

@@ -5,6 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 		<link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.js"></script>
+		<script src="{{url_for('static', filename='auth.js')}}"></script>
 		<style>
 		   
 		</style>
@@ -23,13 +25,11 @@
 	<div id="id01" class="modal">
 
 		<form class="modal-content animate"
-			action="">
+			action="/login" method="POST">
 			<div class="imgcontainer">
 				<span onclick="document.getElementById('id01').style.display='none'"
 					class="close"
 					title="Close Modal">×</span>
-				<img src="{{ url_for('static', filename='images/images_3.jpg') }}"
-					alt="Avatar" class="avatar">
 			</div>
 
 			<div class="container">
@@ -63,6 +63,26 @@
 			}
 		}
 	</script>
+	<div>
+        <p>
+            <button onclick="openUserEditor()">CREATE USER</button>    
+        </p>
+    </div>
+	 <div id="add_user">
+            <div class="user_container">
+                <h2>Add User</h2>
+                <label for="username">Username:</label>
+                <input type="text" id="username">
+                <br>
+                <label for="Password">Password:</label>
+                <input type="password" id="password">
+                <br>
+            </div>    
+            <div class="button_container">
+                <button onclick="saveUser()">Save User</button>
+                <button onclick="closeUserEditor()">Cancel</button>
+            </div>    
+        </div>
 </body>
 
 </html>

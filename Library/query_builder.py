@@ -1,107 +1,104 @@
-from sqlalchemy import create_engine, text
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy import text
 
 class QueryBuilder:
     def __init__(self, table_name):
         self.table_name = table_name
         self.columns = []
         self.values = []
-        self.set_statements = []
+        self.set_values = {}
         self.where_conditions = []
         self.order_by_columns = []
-        self.set_values = {}
-        self.conditions = []
         self.limit_value = None
-        self.kind_of_query= ""
+        self.kind_of_query = ""
+        self.data = {}  # Parameter-Werte für sichere Bindung
 
-    # READ Operation
+    # --- SELECT ---
     def select(self, *columns):
         self.kind_of_query = 'SELECT'
         self.columns = columns if columns else ["*"]
         return self
 
+    # --- WHERE ---
     def where(self, **kwargs):
         for column, value in kwargs.items():
             self.where_conditions.append(f"{column} = :{column}")
             self.data[column] = value
         return self
 
+    # --- ORDER BY ---
     def order_by(self, *columns):
         self.order_by_columns = columns
         return self
 
+    # --- LIMIT ---
     def limit(self, value):
         self.limit_value = value
         return self
 
+    # --- INSERT ---
     def insert(self, **kwargs):
         self.kind_of_query = 'INSERT'
         for column, value in kwargs.items():
             self.columns.append(column)
-            # Hier verwenden wir den Parameter :value anstelle von {value}
-            self.values.append(f"{value}")
+            self.data[column] = value
         return self
-    
+
+    # --- UPDATE ---
     def set(self, **kwargs):
         self.kind_of_query = 'UPDATE'
         self.set_values.update(kwargs)
+        for column, value in kwargs.items():
+            self.data[column] = value
         return self
-    
-    def set_where(self, condition):
-        self.conditions.append(condition)
+
+    def set_where(self, **kwargs):
+        for column, value in kwargs.items():
+            self.where_conditions.append(f"{column} = :{column}")
+            self.data[column] = value
         return self
-    
-    def delete_where(self, condition):
-        self.conditions.append(condition)
+
+    # --- DELETE ---
+    def delete_where(self, **conditions):
+        clause = " AND ".join([f"{k} = '{v}'" for k, v in conditions.items()])
+        self._query = f"DELETE FROM {self.table_name} WHERE {clause}"
         return self
-    
-    # Build Query
+
+    # --- Build SQL ---
     def build(self):
         if self.kind_of_query == 'SELECT':
-            columns_str = ", ".join(self.columns)
-            query = f"SELECT {columns_str} FROM {self.table_name}"
-            if self.where_conditions:
-                where_str = " AND ".join(self.where_conditions)
-                query += f" WHERE {where_str}"
-            if self.order_by_columns:
-                order_by_str = ", ".join(self.order_by_columns)
-                query += f" ORDER BY {order_by_str}"
-            if self.limit_value is not None:
-                query += f" LIMIT {self.limit_value}"
+            cols = ", ".join(self.columns)
+            query = f"SELECT {cols} FROM {self.table_name}"
         elif self.kind_of_query == 'INSERT':
-            if not self.columns or not self.values:
-                raise ValueError("No columns or values to insert")
-
-            columns_str = ", ".join(self.columns)
-            values_str = ", ".join(self.values)
-
-            query = f"INSERT INTO {self.table_name} ({columns_str}) VALUES ({values_str})"
+            cols = ", ".join(self.columns)
+            vals = ", ".join([f":{c}" for c in self.columns])
+            query = f"INSERT INTO {self.table_name} ({cols}) VALUES ({vals})"
         elif self.kind_of_query == 'UPDATE':
-            if not self.set_values:
-                raise ValueError("No columns to update")
-
-            query = f"UPDATE {self.table_name} SET "
-
-            set_clauses = [f"{column} = '{value}'" for column, value in self.set_values.items()]
-            query += ", ".join(set_clauses)
-
-            if self.conditions:
-                query += " WHERE " + " AND ".join(self.conditions)
-        else:
-            if not self.conditions:
-                raise ValueError("No conditions specified for delete query")
-
+            sets = ", ".join([f"{c} = :{c}" for c in self.set_values.keys()])
+            query = f"UPDATE {self.table_name} SET {sets}"
+        elif self.kind_of_query == 'DELETE FROM':
             query = f"DELETE FROM {self.table_name}"
+        else:
+            raise ValueError("Unknown query type")
 
-            if self.conditions:
-                query += " WHERE " + " AND ".join(self.conditions)
+        if self.where_conditions:
+            where_str = " AND ".join(self.where_conditions)
+            query += f" WHERE {where_str}"
+        if self.order_by_columns:
+            query += " ORDER BY " + ", ".join(self.order_by_columns)
+        if self.limit_value is not None:
+            query += f" LIMIT {self.limit_value}"
+
         return query
 
-    # Execute Query
-    def execute(self, session, **params):
+    # --- Execute ---
+    def execute(self, session):
         query = self.build()
-        print("Executing Query:", query)  # Debug Output
-        result = session.execute(text(query), params)
+        print("Executing Query:", query)
+        print("With Parameters:", self.data)
+        result = session.execute(text(query), self.data)
         session.commit()
-        return result.fetchall() if "SELECT" in query else result.rowcount
-
+        if self.kind_of_query == "SELECT":
+            rows = result.fetchall()
+            return [row._asdict() for row in rows]
+        else:
+            return {"affected_rows": result.rowcount}

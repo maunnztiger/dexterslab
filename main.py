@@ -1,10 +1,13 @@
-from flask import Flask, render_template, Response, request, send_from_directory
+from flask import Flask, render_template, Response, request, send_from_directory, session, url_for, flash, redirect, jsonify
+from werkzeug.security import generate_password_hash, check_password_hash
 from flask_cors import CORS
 from Library import model as Model
 import json
 import os
 
 app = Flask(__name__)
+app.secret_key ="erihghrghrghgrdibgh"
+app.debug = True
 CORS(app, origins=["http://localhost:5000"])
 json_map = {}
 app.config['JSON_AS_ASCII'] = False
@@ -31,7 +34,11 @@ def data_js():
 
 @app.route("/")
 def hellou():
-    return render_template("index.html")
+    if 'user_id' in session:
+        return render_template("index.html")
+    return render_template('login.html')
+    
+    
 
 @app.route("/<string:page>")
 def data_html(page):  
@@ -72,9 +79,11 @@ def insert_row():
     newid = data["index"]
     newaspect = data['aspect']
     newvalue = data["value"]
-    print(newid, newaspect, newvalue)
+    print(f"insert_row: table={table_name}, id={newid}, aspect={newaspect}, value={newvalue}", flush=True)
+
     Model.insert_data(table_name, newid, newaspect, newvalue)
-    return json.dumps({'success':True}), 200, {'Content_type':'application/json; charset=utf-8'}
+    new_row = Model.read_data_with_index(table_name, newid)   
+    return jsonify({'success':True, 'new_row': new_row}), 200
 
 @app.route("/delete_row", methods=['POST'])
 def delete_row():
@@ -94,3 +103,29 @@ def add_user():
     Model.add_new_user(username, password) 
     return json.dumps({'success':True}), 200, {'Content_type':'application/json; charset=utf-8'}
 
+
+@app.route("/login", methods=['POST'])
+def login():
+    username = request.form['uname']
+    password = request.form['psw']
+    result = Model.login(username)
+    if result:
+        user_id, password_hash = result
+        if check_password_hash(password_hash, password):
+            session['user_id'] = user_id
+            session['username'] = username
+            return render_template('index.html', username=username)
+        else:
+            flash('Falsches Passwort')
+            return render_template('login.html')
+    else:
+        flash('Benutzer nicht gefunden')
+   
+    return render_template('login.html')
+
+@app.route('/logout')
+def logout():
+    # Session löschen
+    session.clear()
+    # Zurück zur Login-Seite
+    return render_template('login.html')  

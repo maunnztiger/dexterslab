@@ -1,221 +1,241 @@
-let table_name = localStorage.tableName;
-let headline_value = localStorage.linkText;
-const headline = document.getElementById('headline')
-const title = document.querySelector('title')
-headline.textContent = headline_value;
-title.textContent = headline_value;
-console.log(headline_value);
-  fetch('http://localhost:5000/data/'+table_name,{
-            method: 'GET',
-            headers: {
-              'Content-type':'application/json', 
-              'Accept':'application/json'
-              },
-              dataType: "application/json; charset=utf-8"
-       })
-      .then(response => response.json())    
-      .then(data => {
-        let table_name = document.getElementsByTagName('table')[0].id
-        const table = new DataTable('#'+table_name, {
+document.addEventListener('DOMContentLoaded', () => {
+  // --- Config / LocalStorage ---
+  const tableName = localStorage.getItem('tableName') || 'data_general';
+  const headlineValue = localStorage.getItem('linkText') || '';
+  const headlineEl = document.getElementById('headline');
+  const titleEl = document.querySelector('title');
+  if (headlineEl) headlineEl.textContent = headlineValue;
+  if (titleEl) titleEl.textContent = headlineValue;
 
+  // --- DataTable-Instanz (wird später gesetzt) ---
+  let dataTableInstance = null;
+  let currentParam = null; // für setParameter/getParameter
+
+  // --- Fetch initial data und DataTable initialisieren ---
+  fetch(`/data/${encodeURIComponent(tableName)}`, {
+    method: 'GET',
+    headers: { 'Accept': 'application/json' }
+  })
+    .then(res => res.json())
+    .then(data => {
+      const tableEl = document.querySelector('table');
+      const tableId = tableEl ? tableEl.id : 'mytable';
+
+      // jQuery DataTables Initialisierung und Instanz speichern
+      dataTableInstance = $('#' + tableId).DataTable({
         autoWidth: false,
-        "bDestroy": true,
-        pageLength: 50,     
-        columnDefs: [
-          {
-              targets: ['_all'],
-              className: 'mdc-data-table__cell',
-          },
-        ],
+        destroy: true,
+        pageLength: 50,
+        columnDefs: [{ targets: ['_all'], className: 'mdc-data-table__cell' }],
         data: data,
         columns: [
-          { title: 'Id', data: 'id'},
-          { title: 'Aspekt', data: 'aspect'},
-          { title: 'Value', data: 'value'},
-          {
-            data: null,
-            className: 'dt-center editor-edit',
-            defaultContent: '<i class="fa fa-pencil"/>',
-            orderable: false,
-          },
-          {
-            data: null,
-            className: 'dt-center editor-delete',
-            defaultContent: '<button><i class="fa fa-trash"/></button>',
-            orderable: false
-        }
-        ],        
+          { title: 'Id', data: 'id' },
+          { title: 'Aspekt', data: 'aspect' },
+          { title: 'Value', data: 'value' },
+          { data: null, className: 'dt-center editor-edit', defaultContent: '<i class="fa fa-pencil"/>', orderable: false },
+          { data: null, className: 'dt-center editor-delete', defaultContent: '<button><i class="fa fa-trash"/></button>', orderable: false }
+        ]
       });
 
-        
-       // Edit record
-        $('#'+table_name).on('click', 'td.editor-edit', function (e) {
+      // Edit handler (delegation)
+      $('#' + tableId).on('click', 'td.editor-edit', function (e) {
         e.preventDefault();
-        let templateIndex = $(this).closest('tr').index();
-        let datatableIndex = $(this).closest('tr').find('td').first().text();
+        const datatableIndex = $(this).closest('tr').find('td').first().text();
         setParameter(datatableIndex);
-        console.log(templateIndex); 
-      
-        openUpdateEditor(templateIndex+1);
-        });
+        openUpdateEditor(datatableIndex);
+      });
 
-        // Delete Record
-        $('#'+table_name).on('click', 'td.editor-delete', function (e) {
+      // Delete handler (delegation)
+      $('#' + tableId).on('click', 'td.editor-delete', function (e) {
         e.preventDefault();
-        let datatableIndex = $(this).closest('tr').find('td').first().text();
+        const datatableIndex = $(this).closest('tr').find('td').first().text();
         setParameter(datatableIndex);
-        if(confirm("You really want to delete this row?!\nEither OK or Cancel.")){
+        if (confirm("You really want to delete this row?!\nEither OK or Cancel.")) {
           deleteRow(datatableIndex);
         }
-        
-        });
-    }); 
+      });
+    })
+    .catch(err => {
+      console.error('Fetch error', err);
+    });
 
-  const newChild = document.getElementById("returnButton")
-  const parentElement = document.body
-  parentElement.insertBefore(newChild, parentElement.firstChild);
+  // --- Exponierte Wrapper (falls HTML Inline-Handler benutzt) ---
+  window.createRecord = function () { createRecord(); };
+  window.deleteRow = function (id) { deleteRow(id); };
+  window.saveChanges = function () { saveChanges(); };
+  window.openCreateEditor = openCreateEditor;
+  window.openUpdateEditor = openUpdateEditor;
+  window.closeCreateEditor = closeCreateEditor;
+  window.closeEditor = closeEditor;
 
-  function openUpdateEditor(index){
-    let table_name = document.getElementsByTagName('table')[0].id
-    var table = document.getElementById(table_name);
-    var aspectInput = document.getElementById('aspect');
-    var valueInput = document.getElementById('value');
-    var selectedRow = table.rows[index];
-    var aspect = selectedRow.cells[1].innerHTML;
-    var value = selectedRow.cells[2].innerHTML;
-    aspectInput.value = aspect;
-    valueInput.value = value;
+  // ===========================
+  // Editor / CRUD Funktionen
+  // ===========================
 
-    // Show the popup and overlay
+  function openUpdateEditor(id) {
+    // Suche Zeile per id in DataTable und fülle Felder
+    if (!dataTableInstance) { console.warn('DataTable not ready'); return; }
+    let found = null;
+    dataTableInstance.rows().every(function () {
+      const rowData = this.data();
+      if (String(rowData.id) === String(id)) {
+        found = rowData;
+      }
+    });
+    if (!found) {
+      alert('Row not found: ' + id);
+      return;
+    }
+    const aspectInput = document.getElementById('aspect');
+    const valueInput = document.getElementById('value');
+    if (aspectInput) aspectInput.value = found.aspect || '';
+    if (valueInput) valueInput.value = found.value || '';
+
     document.getElementById('popup').style.display = 'block';
     document.getElementById('overlay').style.display = 'block';
   }
 
-  function openCreateEditor(){
+  function openCreateEditor() {
     document.getElementById('popup2').style.display = 'block';
     document.getElementById('overlay2').style.display = 'block';
   }
 
   function closeEditor() {
-    // Hide the popup and overlay
-    document.getElementById('popup').style.display = 'none';
-    document.getElementById('overlay').style.display = 'none';
+    const p = document.getElementById('popup');
+    const o = document.getElementById('overlay');
+    if (p) p.style.display = 'none';
+    if (o) o.style.display = 'none';
   }
 
   function closeCreateEditor() {
-    document.getElementById('popup2').style.display = 'none';
-    document.getElementById('overlay2').style.display = 'none';
+    const p = document.getElementById('popup2');
+    const o = document.getElementById('overlay2');
+    if (p) p.style.display = 'none';
+    if (o) o.style.display = 'none';
   }
 
-  function createRecord(){
-    let table_name = localStorage.tableName; 
-    let idInput = document.getElementById('Id');
-    let aspectInput = document.getElementById('aspect2');
-    let valueInput = document.getElementById('value2');
-    let id = idInput.value;
-    let aspect = aspectInput.value;
-    let value = valueInput.value;
+  function createRecord() {
+    const idInput = document.getElementById('Id');
+    const aspectInput = document.getElementById('aspect2');
+    const valueInput = document.getElementById('value2');
+    const id = idInput ? idInput.value.trim() : '';
+    const aspect = aspectInput ? aspectInput.value : '';
+    const value = valueInput ? valueInput.value : '';
 
-    this.obj = {};
-    this.obj.table_name = table_name
-    this.obj.index = id;
-    this.obj.aspect = aspect;
-    this.obj.value = value;
-    const data = JSON.stringify(this.obj);
-    console.log(this.obj)
+    const payload = { table_name: tableName, aspect: aspect, value: value };
+    if (id !== '') payload.index = id; // optional: send index only when filled
+
     $.ajax({
       type: "POST",
       url: 'insert_row',
-      data: data,
+      data: JSON.stringify(payload),
+      contentType: 'application/json; charset=utf-8',
+      dataType: 'json',
       success: function (response) {
-        console.log(response);
+        console.log('insert response', response);
+        if (response && response.success && response.new_row && dataTableInstance) {
+          // new_row is expected to be an object {id, aspect, value}
+          dataTableInstance.row.add(response.new_row).draw(false);
+        }
+        if (idInput) idInput.value = '';
+        if (aspectInput) aspectInput.value = '';
+        if (valueInput) valueInput.value = '';
+        closeCreateEditor();
       },
-      headers: {
-      'Content-type':'application/json', 
-      'Accept':'application/json'
-      },
-      dataType: "application/json; charset=utf-8"
-    })
-    closeUserEditor();
-    setTimeout(function(){
-      window.location.reload(location.href);
-   }, 500);
+      error: function (xhr, status, err) {
+        console.error('Insert failed', status, err, xhr && xhr.responseText);
+        alert('Insert failed: ' + status);
+      }
+    });
   }
 
   function saveChanges() {
-    let table_name = localStorage.tableName;
-    console.log(table_name)
-    let aspectInput = document.getElementById('aspect');
-    let valueInput = document.getElementById('value');
-    let newAspect = aspectInput.value;
-    let newValue = valueInput.value;
-    
-    datatableIndex = this.getParameter();
-    this.obj = {};
-    this.obj.table_name = table_name
-    this.obj.datatableIndex = datatableIndex;
-    this.obj.newAspect = newAspect;
-    this.obj.newValue = newValue;
-    const data = JSON.stringify(this.obj);
+    const datatableIndex = getParameter();
+    const aspectInput = document.getElementById('aspect');
+    const valueInput = document.getElementById('value');
+    const newAspect = aspectInput ? aspectInput.value : '';
+    const newValue = valueInput ? valueInput.value : '';
+
+    const payload = {
+      table_name: tableName,
+      id: datatableIndex,
+      newAspect: newAspect,
+      newValue: newValue
+    };
+
     $.ajax({
       type: "POST",
       url: 'update_row',
-      data: data,
+      data: JSON.stringify(payload),
+      contentType: 'application/json; charset=utf-8',
+      dataType: 'json',
       success: function (response) {
-        console.log(response);
+        console.log('update response', response);
+        if (response && response.success && dataTableInstance) {
+          // Update table rows that match id
+          dataTableInstance.rows().every(function () {
+            const rowData = this.data();
+            if (String(rowData.id) === String(datatableIndex)) {
+              // Prefer server-returned updated row if available
+              const updated = response.updated_row || { id: datatableIndex, aspect: newAspect, value: newValue };
+              this.data(updated);
+            }
+          });
+          dataTableInstance.draw(false);
+        }
+        closeEditor();
       },
-      headers: {
-      'Content-type':'application/json', 
-      'Accept':'application/json'
-      },
-      dataType: "application/json; charset=utf-8"
-    })
-   closeEditor();
-   setTimeout(function(){
-     window.location.reload(location.href);
-   }, 500);
+      error: function (xhr, status, err) {
+        console.error('Update failed', status, err, xhr && xhr.responseText);
+        alert('Update failed: ' + status);
+      }
+    });
   }
 
-  function deleteRow(datatableIndex){
-    let table_name = localStorage.tableName;
-    console.log(table_name)
-    this.obj = {};
-    this.obj.id = datatableIndex;
-    this.obj.table_name = table_name;
-    const data = JSON.stringify(this.obj);
+  function deleteRow(datatableIndex) {
+    const payload = { id: datatableIndex, table_name: tableName };
+
     $.ajax({
       type: "POST",
       url: 'delete_row',
-      data: data,
+      data: JSON.stringify(payload),
+      contentType: 'application/json; charset=utf-8',
+      dataType: 'json',
       success: function (response) {
-        console.log(response);
+        console.log('delete response', response);
+        if (response && response.success && dataTableInstance) {
+          // remove matching rows
+          dataTableInstance.rows().every(function () {
+            const rowData = this.data();
+            if (String(rowData.id) === String(datatableIndex)) {
+              this.remove();
+            }
+          });
+          dataTableInstance.draw(false);
+        }
       },
-      headers: {
-      'Content-type':'application/json', 
-      'Accept':'application/json'
-      },
-      dataType: "application/json; charset=utf-8"
-    })
-    setTimeout(function(){
-      window.location.reload(location.href);
-    }, 500);
-   
+      error: function (xhr, status, err) {
+        console.error('Delete failed', status, err, xhr && xhr.responseText);
+        alert('Delete failed: ' + status);
+      }
+    });
   }
 
+  // Utility parameter getters/setters
   function setParameter(param) {
-    this.param = param;
+    currentParam = param;
   }
 
-  function getParameter(){
-    return this.param;
+  function getParameter() {
+    return currentParam;
   }
 
-  function goBack() {
-    window.history.back();
-  }
+  // Misc helpers
+ window.goBack = function() {
+  window.history.back();
+};
 
-  function openDiagramPage(){
-    console.log('graph.js')
-    location.assign('diagram.html')
+  function openDiagramPage() {
+    location.assign('diagram.html');
   }
-
+});

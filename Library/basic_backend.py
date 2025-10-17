@@ -30,7 +30,19 @@ def read_data(table_name):
     session.close()
     return json_array
    
-    
+def read_data_with_index(table_name, id):
+    session = connect_to_database()
+    model = object.QueryBuilder(table_name)
+    query = model.select('id', 'aspect', 'value').where(id=id).build()
+    result = session.execute(text(query),  model.data)
+    row = result.fetchone()
+    session.close()
+
+    # row ist ein SQLAlchemy Row-Objekt – in Dict umwandeln
+    new_row = row._asdict() if row else None
+
+    return new_row
+
 def update_data(table_name, newAspect, newValue, id):
     try:
         session = connect_to_database()
@@ -68,17 +80,26 @@ def add_user(username, password):
     except Exception as e:
         print(e)    
 
+def login_user(username):
+    try:
+        session = connect_to_database()
+        result= session.execute(text("SELECT id, password_hash FROM users WHERE username = :username"),
+        {"username": username})
+        row = result.fetchone()
+        session.close()
+        return row
+    except Exception as e:
+        print(e)
+
 
 
 def delete_row(id, table_name):
     try:
         session = connect_to_database()
-        condition = "id = :id"
-        data = {'id': id}
-        query_builder = object.QueryBuilder(table_name)
-        delete_query = query_builder.delete_where(condition).build()
-        session.execute(text(delete_query), data)
+        query = f"DELETE FROM {table_name} WHERE id = :id"
+        session.execute(text(query), {"id": id})
         session.commit()
+        session.close()
     except Exception as e:
         print(e)    
 

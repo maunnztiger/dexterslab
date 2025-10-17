@@ -1,17 +1,22 @@
 services:
   db:
     image: postgres:16
+    container_name: dexterslab-db-1
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: root
       POSTGRES_DB: testdb
-    volumes:
-      - ./Database/testdb_dumb.sql:/docker-entrypoint-initdb.d/testdb.sql
-
     ports:
       - "5432:5432"
+    volumes:
+      # hier bleiben Daten persistent gespeichert
+      - dexterslab_data:/var/lib/postgresql/data
+      # optionales Init-SQL, wird nur beim ersten Start ausgeführt
+      - ./Database/testdb_dumb.sql:/docker-entrypoint-initdb.d/testdb.sql
+
   web:
     build: .
+    container_name: dexterslab-web
     ports:
       - "5000:5000"
     restart: unless-stopped
@@ -22,3 +27,6 @@ services:
     volumes:
       - .:/app
     command: ["gunicorn", "-b", "0.0.0.0:5000", "main:app"]
+
+volumes:
+  dexterslab_data:
