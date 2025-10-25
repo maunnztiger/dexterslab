@@ -37,12 +37,45 @@ def hellou():
     if 'user_id' in session:
         return render_template("index.html")
     return render_template('login.html')
-    
-    
+
+@app.before_request
+def require_login():
+    # Nur prüfen, wenn Flask weiß, wohin der Request gehört
+    if request.endpoint is None:
+        return
+
+    allowed_endpoints = {'login', 'static', 'add_user', 'add_new_user'}
+    if request.endpoint not in allowed_endpoints and 'user_id' not in session:
+        return redirect(url_for('login'))
+
+        
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    # Wenn das Formular abgeschickt wurde:
+    if request.method == "POST":
+        username = request.form.get('uname')
+        password = request.form.get('psw')
+
+        result = Model.login(username)
+        if result:
+            user_id, password_hash = result
+            if check_password_hash(password_hash, password):
+                session['user_id'] = user_id
+                session['username'] = username
+                return redirect("/index.html")
+            else:
+                flash('Falsches Passwort')
+        else:
+            flash('Benutzer nicht gefunden')
+
+    # GET oder Fehler → Login-Seite anzeigen
+    return render_template("login.html")
 
 @app.route("/<string:page>")
 def data_html(page):  
-   return render_template(str(page))
+    if not page.endswith(".html"):
+        page += ".html"
+    return render_template(page)
 
 @app.route('/favicon.ico')
 def favicon():
@@ -102,26 +135,6 @@ def add_user():
     print(username, password)
     Model.add_new_user(username, password) 
     return json.dumps({'success':True}), 200, {'Content_type':'application/json; charset=utf-8'}
-
-
-@app.route("/login", methods=['POST'])
-def login():
-    username = request.form['uname']
-    password = request.form['psw']
-    result = Model.login(username)
-    if result:
-        user_id, password_hash = result
-        if check_password_hash(password_hash, password):
-            session['user_id'] = user_id
-            session['username'] = username
-            return render_template('index.html', username=username)
-        else:
-            flash('Falsches Passwort')
-            return render_template('login.html')
-    else:
-        flash('Benutzer nicht gefunden')
-   
-    return render_template('login.html')
 
 @app.route('/logout')
 def logout():

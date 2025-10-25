@@ -1,13 +1,14 @@
 services:
   db:
     image: postgres:16
+    restart: unless-stopped
     container_name: dexterslab-db-1
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: root
       POSTGRES_DB: testdb
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       # hier bleiben Daten persistent gespeichert
       - dexterslab_data:/var/lib/postgresql/data
@@ -16,10 +17,10 @@ services:
 
   web:
     build: .
+    restart: unless-stopped
     container_name: dexterslab-web
     ports:
       - "5000:5000"
-    restart: unless-stopped
     environment:
       - POSTGRES_URL=postgresql://postgres:root@db:5432/testdb
     depends_on:

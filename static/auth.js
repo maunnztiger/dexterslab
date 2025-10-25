@@ -34,7 +34,4 @@ function saveUser() {
       dataType: "application/json; charset=utf-8"
     })
    closeUserEditor()();
-   setTimeout(function(){
-     window.location.reload(location.href);
-   }, 500);
   }

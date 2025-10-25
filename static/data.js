@@ -231,9 +231,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Misc helpers
- window.goBack = function() {
-  window.history.back();
+window.goBack = function() {
+  if (document.referrer && document.referrer !== window.location.href) {
+    window.location.href = document.referrer;
+  } else {
+    window.location.href = "/index.html"; // Fallback
+  }
 };
+
 
   function openDiagramPage() {
     location.assign('diagram.html');
